@@ -1,0 +1,49 @@
+---
+title: "Histogram"
+format: html
+---
+
+## Jak narysować histogram w R?
+
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w ...
+
+### Base R
+
+Do narysowania histogramu wykorzystaj funkcję `hist`. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu `breaks` do podania oczekiwanej liczby przedziałów histogramu.
+
+```{r}
+# wczytanie danych
+data_hist <- read.table('data/data_test.txt')
+
+# histogram
+hist(data_hist$x)
+
+# histogram z wybraną liczbą przedziałów
+hist(data_hist$x, breaks = 50)
+```
+
+
+### ggplot2
+
+Do narysowania histogramu wykorzystaj funckje `ggplot` i `geom_histogram`
+
+W funkcji `ggplot` podaj nazwę tabeli i nazwę kolumny z danymi: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny))`. Potem dodaj do `geom_histogram()`. Możesz dodatkowo ustawić szerokość przedziału przy pomocy argumentu `binwidth`
+
+```{r}
+# wczytaj bibliotekę ggplot2
+library(ggplot2)
+
+# histogram
+ggplot(data_hist, aes(x = x)) + 
+  geom_histogram()
+
+# histogram z wybraną szerokością przedziału
+ggplot(data_hist, aes(x = x)) + 
+  geom_histogram(binwidth = 0.1)+
+  theme_bw() # białe tło
+```
+
+
+## Jak narysować histogram w Excel?
+
+

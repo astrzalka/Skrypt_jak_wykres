@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów",
+    "section": "",
+    "text": "Preface\nAnaliza danych biologicznych i prezentacja wyników"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "histogram.html#jak-narysować-histogram-w-r",
+    "href": "histogram.html#jak-narysować-histogram-w-r",
+    "title": "1  Histogram",
+    "section": "1.1 Jak narysować histogram w R?",
+    "text": "1.1 Jak narysować histogram w R?\nWczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w …\n\n1.1.1 Base R\nDo narysowania histogramu wykorzystaj funkcję hist. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu breaks do podania oczekiwanej liczby przedziałów histogramu.\n\n# wczytanie danych\ndata_hist &lt;- read.table('data/data_test.txt')\n\n# histogram\nhist(data_hist$x)\n\n\n\n# histogram z wybraną liczbą przedziałów\nhist(data_hist$x, breaks = 50)\n\n\n\n\n\n\n1.1.2 ggplot2\nDo narysowania histogramu wykorzystaj funckje ggplot i geom_histogram\nW funkcji ggplot podaj nazwę tabeli i nazwę kolumny z danymi: ggplot(nazwa_tabeli, aes(x = nazwa_kolumny)). Potem dodaj do geom_histogram(). Możesz dodatkowo ustawić szerokość przedziału przy pomocy argumentu binwidth\n\n# wczytaj bibliotekę ggplot2\nlibrary(ggplot2)\n\n# histogram\nggplot(data_hist, aes(x = x)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# histogram z wybraną szerokością przedziału\nggplot(data_hist, aes(x = x)) + \n  geom_histogram(binwidth = 0.1)+\n  theme_bw() # białe tło"
+  },
+  {
+    "objectID": "histogram.html#jak-narysować-histogram-w-excel",
+    "href": "histogram.html#jak-narysować-histogram-w-excel",
+    "title": "1  Histogram",
+    "section": "1.2 Jak narysować histogram w Excel?",
+    "text": "1.2 Jak narysować histogram w Excel?"
+  }
+]

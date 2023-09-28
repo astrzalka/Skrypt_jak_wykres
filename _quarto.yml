@@ -1,0 +1,22 @@
+project:
+  type: book
+
+book:
+  title: "Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów"
+  author: "Agnieszka Strzałka"
+  date: "28/09/2023"
+  chapters:
+    - index.qmd
+    - histogram.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: source
+
