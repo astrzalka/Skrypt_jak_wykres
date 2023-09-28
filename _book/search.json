@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów",
     "section": "",
-    "text": "Preface\nAnaliza danych biologicznych i prezentacja wyników"
+    "text": "Wstęp\nAnaliza danych biologicznych i prezentacja wyników"
   },
   {
     "objectID": "intro.html",
@@ -25,7 +25,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Odkrywać! Ujawniać! Objaśniać! Zbiór esejów o sztuce prezentowania danych, Przemysław Biecek\nFundamentals of Data Visualization, Claus O. Wilke, https://clauswilke.com/dataviz/\nTen Simple Rules for Better Figures Rougier NP, Droettboom M, Bourne PE (2014) PLoS Comput Biol 10(9): e1003833. https://doi.org/10.1371/journal.pcbi.1003833\nThe misuse of colour in science communication. Crameri, F., Shephard, G.E. & Heron, P.J. Nat Commun 11, 5444 (2020). https://doi.org/10.1038/s41467-020-19160-7\nBeyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. Weissgerber TL, Milic NM, Winham SJ, Garovic VD (2015) PLoS Biol 13(4): e1002128. https://doi.org/10.1371/journal.pbio.1002128\nVisualization of Biomedical Data, Seán I. O’Donoghue, Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, Davis J. McCarthy, William J. Moore, Esther Stenau, Jason R. Swedlow, Jenny Vuong, James B. Procter, Annual Review of Biomedical Data Science 2018 1:1, 275-304\nSave the Pies for Dessert, Stephen Few, Perceptual Edge, Visual Business Intelligence Newsletter, August 2007\nWhy rainbow colour scales can be misleading, Ed Hawkins, http://www.climate-lab-book.ac.uk/2016/why-rainbow-colour-scales-can-be-misleading/\nData Visualization in the Neurosciences: Overcoming the Curse of Dimensionality, Elena A.Allen, Erik B.Erhardt, Vince D.Calhoun\nWhy scientists need to be better at data visualization, Betsy Mason, https://knowablemagazine.org/article/mind/2019/science-data-visualization\nEnd of the Rainbow? New Map Scale Is More Readable by People Who Are Color Blind, Betsy Mason, https://www.scientificamerican.com/article/end-of-the-rainbow-new-map-scale-is-more-readable-by-people-who-are-color-blind/\nReal Chart Rules to Follow, Nathan Yau, https://flowingdata.com/2015/08/11/real-chart-rules-to-follow/\nBeyond Memorability: Visualization Recognition and Recall Michelle A. Borkin, Member, IEEE, Zoya Bylinskii, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, Senior Member, IEEE, and Aude Oliva\nUseful Junk? The Effects of Visual Embellishment on Comprehension and Memorability of Charts Scott Bateman, Regan L. Mandryk, Carl Gutwin, Aaron Genest, David McDine, Christopher Brooks\nWhy you sometimes need to break the rules in data viz, Rosamund Pearce, https://medium.economist.com/why-you-sometimes-need-to-break-the-rules-in-data-viz-4d8ece284919"
   },
   {
     "objectID": "histogram.html#jak-narysować-histogram-w-r",
@@ -40,5 +40,12 @@
     "title": "1  Histogram",
     "section": "1.2 Jak narysować histogram w Excel?",
     "text": "1.2 Jak narysować histogram w Excel?"
+  },
+  {
+    "objectID": "index.html#wstęp",
+    "href": "index.html#wstęp",
+    "title": "Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów",
+    "section": "Wstęp",
+    "text": "Wstęp\nAnaliza danych biologicznych i prezentacja wyników"
   }
 ]

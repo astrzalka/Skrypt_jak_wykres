@@ -1,4 +1,34 @@
 # References {.unnumbered}
 
+Odkrywać! Ujawniać! Objaśniać! Zbiór esejów o sztuce prezentowania danych, Przemysław Biecek
+
+Fundamentals of Data Visualization, Claus O. Wilke, https://clauswilke.com/dataviz/
+
+Ten Simple Rules for Better Figures Rougier NP, Droettboom M, Bourne PE (2014) PLoS Comput Biol 10(9): e1003833. https://doi.org/10.1371/journal.pcbi.1003833
+
+The misuse of colour in science communication. Crameri, F., Shephard, G.E. & Heron, P.J. Nat Commun 11, 5444 (2020). https://doi.org/10.1038/s41467-020-19160-7
+
+Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. Weissgerber TL, Milic NM, Winham SJ, Garovic VD (2015) PLoS Biol 13(4): e1002128. https://doi.org/10.1371/journal.pbio.1002128
+
+Visualization of Biomedical Data, Seán I. O'Donoghue, Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, Davis J. McCarthy, William J. Moore, Esther Stenau, Jason R. Swedlow, Jenny Vuong, James B. Procter, Annual Review of Biomedical Data Science 2018 1:1, 275-304
+
+Save the Pies for Dessert, Stephen Few, Perceptual Edge, Visual Business Intelligence Newsletter, August 2007
+
+Why rainbow colour scales can be misleading, Ed Hawkins, http://www.climate-lab-book.ac.uk/2016/why-rainbow-colour-scales-can-be-misleading/
+
+Data Visualization in the Neurosciences: Overcoming the Curse of Dimensionality, Elena A.Allen, Erik B.Erhardt, Vince D.Calhoun
+
+Why scientists need to be better at data visualization, Betsy Mason, https://knowablemagazine.org/article/mind/2019/science-data-visualization
+
+End of the Rainbow? New Map Scale Is More Readable by People Who Are Color Blind, Betsy Mason, https://www.scientificamerican.com/article/end-of-the-rainbow-new-map-scale-is-more-readable-by-people-who-are-color-blind/
+
+Real Chart Rules to Follow, Nathan Yau, https://flowingdata.com/2015/08/11/real-chart-rules-to-follow/
+
+Beyond Memorability: Visualization Recognition and Recall Michelle A. Borkin*, Member, IEEE, Zoya Bylinskii*, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, Senior Member, IEEE, and Aude Oliva
+
+Useful Junk? The Effects of Visual Embellishment on Comprehension and Memorability of Charts Scott Bateman, Regan L. Mandryk, Carl Gutwin, Aaron Genest, David McDine, Christopher Brooks
+
+Why you sometimes need to break the rules in data viz, Rosamund Pearce, https://medium.economist.com/why-you-sometimes-need-to-break-the-rules-in-data-viz-4d8ece284919
+
 ::: {#refs}
 :::

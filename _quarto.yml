@@ -4,7 +4,8 @@ project:
 book:
   title: "Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów"
   author: "Agnieszka Strzałka"
-  date: "28/09/2023"
+  search: true
+  repo-url: https://github.com/astrzalka/Skrypt_jak_wykres
   chapters:
     - index.qmd
     - histogram.qmd
