@@ -30,22 +30,57 @@
   {
     "objectID": "histogram.html#jak-narysować-histogram-w-r",
     "href": "histogram.html#jak-narysować-histogram-w-r",
-    "title": "1  Histogram",
-    "section": "1.1 Jak narysować histogram w R?",
-    "text": "1.1 Jak narysować histogram w R?\nWczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w …\n\n1.1.1 Base R\nDo narysowania histogramu wykorzystaj funkcję hist. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu breaks do podania oczekiwanej liczby przedziałów histogramu.\n\n# wczytanie danych\ndata_hist &lt;- read.table('data/data_test.txt')\n\n# histogram\nhist(data_hist$x)\n\n\n\n# histogram z wybraną liczbą przedziałów\nhist(data_hist$x, breaks = 50)\n\n\n\n\n\n\n1.1.2 ggplot2\nDo narysowania histogramu wykorzystaj funckje ggplot i geom_histogram\nW funkcji ggplot podaj nazwę tabeli i nazwę kolumny z danymi: ggplot(nazwa_tabeli, aes(x = nazwa_kolumny)). Potem dodaj do geom_histogram(). Możesz dodatkowo ustawić szerokość przedziału przy pomocy argumentu binwidth\n\n# wczytaj bibliotekę ggplot2\nlibrary(ggplot2)\n\n# histogram\nggplot(data_hist, aes(x = x)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# histogram z wybraną szerokością przedziału\nggplot(data_hist, aes(x = x)) + \n  geom_histogram(binwidth = 0.1)+\n  theme_bw() # białe tło"
+    "title": "2  Histogram",
+    "section": "2.1 Jak narysować histogram w R?",
+    "text": "2.1 Jak narysować histogram w R?\nWczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w Jak wczytać dane do R\n\n2.1.1 Base R\nDo narysowania histogramu wykorzystaj funkcję hist. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu breaks do podania oczekiwanej liczby przedziałów histogramu.\n\n# wczytanie danych\ndata_hist &lt;- read.table('data/data_test.txt')\n\n# histogram\nhist(data_hist$x)\n\n\n\n# histogram z wybraną liczbą przedziałów\nhist(data_hist$x, breaks = 50)\n\n\n\n\n\n\n2.1.2 ggplot2\nDo narysowania histogramu wykorzystaj funckje ggplot i geom_histogram\nW funkcji ggplot podaj nazwę tabeli i nazwę kolumny z danymi: ggplot(nazwa_tabeli, aes(x = nazwa_kolumny)). Potem dodaj do geom_histogram(). Możesz dodatkowo ustawić szerokość przedziału przy pomocy argumentu binwidth\n\n# wczytaj bibliotekę ggplot2\nlibrary(ggplot2)\n\n# histogram\nggplot(data_hist, aes(x = x)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# histogram z wybraną szerokością przedziału\nggplot(data_hist, aes(x = x)) + \n  geom_histogram(binwidth = 0.1)+\n  theme_bw() # białe tło"
   },
   {
     "objectID": "histogram.html#jak-narysować-histogram-w-excel",
     "href": "histogram.html#jak-narysować-histogram-w-excel",
-    "title": "1  Histogram",
-    "section": "1.2 Jak narysować histogram w Excel?",
-    "text": "1.2 Jak narysować histogram w Excel?"
+    "title": "2  Histogram",
+    "section": "2.2 Jak narysować histogram w Excel?",
+    "text": "2.2 Jak narysować histogram w Excel?"
   },
   {
     "objectID": "index.html#wstęp",
     "href": "index.html#wstęp",
     "title": "Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów",
     "section": "Wstęp",
-    "text": "Wstęp\nAnaliza danych biologicznych i prezentacja wyników"
+    "text": "Wstęp\nAnaliza danych biologicznych i prezentacja wyników\nSkrypt zawiera opis przygotowania wykresów w programie R i Excel wraz z przykładami."
+  },
+  {
+    "objectID": "wczytanie_danych.html#wczytanie-danych-do-r",
+    "href": "wczytanie_danych.html#wczytanie-danych-do-r",
+    "title": "2  Wczytanie danych",
+    "section": "2.1 Wczytanie danych do R",
+    "text": "2.1 Wczytanie danych do R\nDo R można wczytać dane zapisane w formacie tekstowym txt, csv itp. oraz w formacie excel xlsx (wymaga zainstalowania dodatkowego pakietu readxl).\nWczytanie danych do R ułatwia obecna w Rstudio funkcja Import Dataset\n\n\n\n\n\nPo wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się poniższe okno dialogowe\n\n\n\n\n\nPo ustawieniu wszytskich parametrów takich jak obecność nazw kolumn i separatory można wczytać dane (Import). Dane pojawią się w środowisku R (zakładka Environment). W oknie konsoli pojawi się też kod użyty do wczytania danych, który można skopiować i zapisać w skrypcie do wykorzystania w przyszłości. Kliknięcie na nazwę wczytanej tabeli w zakładce Environment otworzy podgląd danych, który można sortować i filtrować, ale nie jest możliwa edycja danych."
+  },
+  {
+    "objectID": "wczytanie_danych.html#jak-wczytać-dane-do-r",
+    "href": "wczytanie_danych.html#jak-wczytać-dane-do-r",
+    "title": "1  Wczytanie danych",
+    "section": "1.1 Jak wczytać dane do R?",
+    "text": "1.1 Jak wczytać dane do R?\nDo R można wczytać dane zapisane w formacie tekstowym txt, csv itp. oraz w formacie excel xlsx (wymaga zainstalowania dodatkowego pakietu readxl).\nWczytanie danych do R ułatwia obecna w Rstudio funkcja Import Dataset (Zakładka Environment).\n\n\n\n\n\nPo wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się poniższe okno dialogowe\n\n\n\n\n\nPo ustawieniu wszytskich parametrów takich jak obecność nazw kolumn i separatory można wczytać dane (Import). Dane pojawią się w środowisku R (zakładka Environment). W oknie konsoli pojawi się też kod użyty do wczytania danych, który można skopiować i zapisać w skrypcie do wykorzystania w przyszłości. Kliknięcie na nazwę wczytanej tabeli w zakładce Environment otworzy podgląd danych, który można sortować i filtrować, ale nie jest możliwa edycja danych."
+  },
+  {
+    "objectID": "boxplot.html#jak-narysować-boxplot-w-r",
+    "href": "boxplot.html#jak-narysować-boxplot-w-r",
+    "title": "3  Boxplot",
+    "section": "3.1 Jak narysować boxplot w R?",
+    "text": "3.1 Jak narysować boxplot w R?\nWczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w Jak wczytać dane do R\n\n3.1.1 Base R\nDo narysowania wykresu pudełkowego wykorzystaj funckję boxplot. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli\\(nazwa_kolumny albo skorzystać z formuły nazwa_tabeli\\)kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.\n\ndata_box &lt;- read.table('data/data_test.txt')\n\nboxplot(data_box$x)\n\n\n\nboxplot(data_box$x ~ data_box$rozklad)\n\n\n\n\n\n\n3.1.2 ggplot2\nDo narysowania histogramu wykorzystaj funckje ggplot i geom_boxplot\nW funkcji ggplot podaj nazwę tabeli, nazwę kolumny z danymi liczbowymi i nazwę kolumny z grupami: ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_grupy, y = nazwa_kolumny_liczby)). Potem dodaj do niej geom_boxplot().\n\n# wczytaj bibliotekę ggplot2\nlibrary(ggplot2)\n\nggplot(data_box, aes(x = rozklad, y = x))+\n  geom_boxplot()\n\n\n\n\nWykres pudełkowy można połączyć z wykresem wiolinowym pokazującym kształt rozkładu używając funkcji geom_violin lub dodać do niego wszystkie obserwacje jako punkty używając geom_jitter. Możesz również sprawdzić dodatkowy pakiet ggbeeswarm, który zawiera inne funckje umożliwiające dodanie obserwacji do wykresu.\n\nggplot(data_box, aes(x = rozklad, y = x))+\n  geom_boxplot(width = 0.2)+ # width zmienia szerokość pudełka\n  geom_violin(alpha = 0)+ # alpha = 0 violin będzie pusty w środku\n  theme_classic() # białe tło, bez linii pomocniczych\n\n\n\nggplot(data_box, aes(x = rozklad, y = x))+\n  geom_boxplot(width = 0.2, fill = 'lightgreen')+ # width zmienia szerokość pudełka\n  geom_violin(alpha = 0)+ # alpha = 0 violin będzie pusty w środku\n  theme_classic()+ # białe tło, bez linii pomocniczych\n  geom_jitter(alpha = 0.25, width = 0.1)"
+  },
+  {
+    "objectID": "wczytanie_danych.html#jak-wczytać-dane-tekstowe-do-excel",
+    "href": "wczytanie_danych.html#jak-wczytać-dane-tekstowe-do-excel",
+    "title": "1  Wczytanie danych",
+    "section": "1.2 Jak wczytać dane tekstowe do Excel?",
+    "text": "1.2 Jak wczytać dane tekstowe do Excel?"
+  },
+  {
+    "objectID": "boxplot.html#jak-narysować-boxplot-w-excel",
+    "href": "boxplot.html#jak-narysować-boxplot-w-excel",
+    "title": "3  Boxplot",
+    "section": "3.2 Jak narysować boxplot w Excel?",
+    "text": "3.2 Jak narysować boxplot w Excel?"
   }
 ]

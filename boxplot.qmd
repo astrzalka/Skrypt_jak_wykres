@@ -1,0 +1,55 @@
+---
+title: "Boxplot"
+format: html
+---
+
+## Jak narysować boxplot w R?
+
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
+
+### Base R
+
+Do narysowania wykresu pudełkowego wykorzystaj funckję `boxplot`. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli$nazwa_kolumny albo skorzystać z formuły nazwa_tabeli$kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.
+
+```{r}
+data_box <- read.table('data/data_test.txt')
+
+boxplot(data_box$x)
+
+boxplot(data_box$x ~ data_box$rozklad)
+
+```
+
+### ggplot2
+
+Do narysowania histogramu wykorzystaj funckje `ggplot` i `geom_boxplot`
+
+W funkcji `ggplot` podaj nazwę tabeli, nazwę kolumny z danymi liczbowymi i nazwę kolumny z grupami: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_grupy, y = nazwa_kolumny_liczby))`. Potem dodaj do niej `geom_boxplot()`. 
+
+```{r}
+# wczytaj bibliotekę ggplot2
+library(ggplot2)
+
+ggplot(data_box, aes(x = rozklad, y = x))+
+  geom_boxplot()
+
+
+```
+
+Wykres pudełkowy można połączyć z wykresem wiolinowym pokazującym kształt rozkładu używając funkcji `geom_violin` lub dodać do niego wszystkie obserwacje jako punkty używając `geom_jitter`. Możesz również sprawdzić dodatkowy pakiet ggbeeswarm, który zawiera inne funckje umożliwiające dodanie obserwacji do wykresu.
+
+```{r}
+ggplot(data_box, aes(x = rozklad, y = x))+
+  geom_boxplot(width = 0.2)+ # width zmienia szerokość pudełka
+  geom_violin(alpha = 0)+ # alpha = 0 violin będzie pusty w środku
+  theme_classic() # białe tło, bez linii pomocniczych
+
+ggplot(data_box, aes(x = rozklad, y = x))+
+  geom_boxplot(width = 0.2, fill = 'lightgreen')+ # width zmienia szerokość pudełka
+  geom_violin(alpha = 0)+ # alpha = 0 violin będzie pusty w środku
+  theme_classic()+ # białe tło, bez linii pomocniczych
+  geom_jitter(alpha = 0.25, width = 0.1)
+```
+
+
+## Jak narysować boxplot w Excel?

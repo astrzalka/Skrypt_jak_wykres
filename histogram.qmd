@@ -5,7 +5,7 @@ format: html
 
 ## Jak narysować histogram w R?
 
-Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w ...
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
 
 ### Base R
 

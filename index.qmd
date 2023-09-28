@@ -1,3 +1,5 @@
 ## Wstęp {.unnumbered}
 
 Analiza danych biologicznych i prezentacja wyników
+
+Skrypt zawiera opis przygotowania wykresów w programie R i Excel wraz z przykładami.

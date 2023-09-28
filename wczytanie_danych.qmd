@@ -1,0 +1,23 @@
+---
+title: "Wczytanie danych"
+format: html
+---
+
+## Jak wczytać dane do R?
+
+Do R można wczytać dane zapisane w formacie tekstowym txt, csv itp. oraz w formacie excel xlsx (wymaga zainstalowania dodatkowego pakietu readxl). 
+
+Wczytanie danych do R ułatwia obecna w Rstudio funkcja Import Dataset (Zakładka Environment).
+
+![](images/import_dataset.png){fig-align="center" width="400"}
+
+Po wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się poniższe okno dialogowe
+
+![](images/okno_import_dataset.png){fig-align="center" width="400"}
+
+Po ustawieniu wszytskich parametrów takich jak obecność nazw kolumn i separatory można wczytać dane (Import). Dane pojawią się w środowisku R (zakładka Environment). W oknie konsoli pojawi się też kod użyty do wczytania danych, który można skopiować i zapisać w skrypcie do wykorzystania w przyszłości. Kliknięcie na nazwę wczytanej tabeli w zakładce Environment otworzy podgląd danych, który można sortować i filtrować, ale nie jest możliwa edycja danych.
+
+## Jak wczytać dane tekstowe do Excel?
+
+
+

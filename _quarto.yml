@@ -8,7 +8,9 @@ book:
   repo-url: https://github.com/astrzalka/Skrypt_jak_wykres
   chapters:
     - index.qmd
+    - wczytanie_danych.qmd
     - histogram.qmd
+    - boxplot.qmd
     - references.qmd
 
 bibliography: references.bib
