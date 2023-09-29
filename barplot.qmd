@@ -1,0 +1,52 @@
+---
+title: "Wykres słupkowy"
+---
+
+Wykres słupkowy jest najczęściej stosowanym typem wykresu w publikacjach naukowych. Umożliwia wizualną reprezentację danych jakościowych. Przy danych ilościowych warto rozważyć inny sporób prezentacji danych np. [wykres pudełkowy](boxplot.qmd). Jak dodać do wykresu słupkowego zakres błędu sprawdź tutaj.
+
+## Jak narysować wykres słupkowy w R?
+
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
+
+### Base R
+
+Do przygotowanie wykresu słupkowego w R można wykorzystać dane pokazujące jak często występowała dana kategoria np.
+
+```{r}
+# wczytanie danych csv
+animal <- read.csv('data/animal.csv')
+# head pokazuje pierwsze 6 wierszy z tabeli
+head(animal)
+```
+W powyższych danych można przygotować wykres słupkowy pokazujący liczebność kategorii w kolumnie Intake.Type lub Animal.Type
+
+```{r}
+# funkcja table zlicza częstość występowania każdej grupy
+animal_type_tabela <- table(animal$Animal.Type)
+# rysowanie wykresu
+barplot(animal_type_tabela)
+```
+
+### ggplot2
+
+Do narysowania histogramu wykorzystaj funkcje `ggplot` i `geom_bar` albo `geom_col`. To, której funkcji użyjemy zależy od tego czy dane zostały wcześniej zliczone (`geom_col`) czy nie (`geom_bar`).
+
+Do zliczania danych zamiast funkcji `table` lepiej użyć funkcji `count` z pakietu dplyr.
+
+```{r, warning=FALSE, message=FALSE}
+# wczytanie bibliotek
+library(ggplot2)
+library(dplyr)
+
+# prostsza wersja - geom_bar()
+ggplot(animal, aes(x = Animal.Type))+
+  geom_bar()
+
+# trudniejsza wersja count + geom_col
+tabela_animal_type <- count(animal, Animal.Type)
+ggplot(tabela_animal_type, aes(x = Animal.Type, y = n))+
+  geom_col()
+```
+
+## Jak narysować wykres słupkowy w Excel?
+

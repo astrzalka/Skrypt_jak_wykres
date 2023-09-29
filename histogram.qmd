@@ -25,7 +25,7 @@ hist(data_hist$x, breaks = 50)
 
 ### ggplot2
 
-Do narysowania histogramu wykorzystaj funckje `ggplot` i `geom_histogram`
+Do narysowania histogramu wykorzystaj funkcje `ggplot` i `geom_histogram`
 
 W funkcji `ggplot` podaj nazwę tabeli i nazwę kolumny z danymi: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny))`. Potem dodaj do `geom_histogram()`. Możesz dodatkowo ustawić szerokość przedziału przy pomocy argumentu `binwidth`
 

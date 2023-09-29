@@ -11,6 +11,8 @@ book:
     - wczytanie_danych.qmd
     - histogram.qmd
     - boxplot.qmd
+    - barplot.qmd
+    - scatterplot.qmd
     - references.qmd
 
 bibliography: references.bib

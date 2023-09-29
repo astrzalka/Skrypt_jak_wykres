@@ -3,13 +3,15 @@ title: "Boxplot"
 format: html
 ---
 
+Wykres pudełkowy (ang. *boxplot*) pozwala na wizualizację pewnych cech rozkładu zmiennej, zwykle jest to mediana oraz pierwszy i trzeci kwartyl. 
+
 ## Jak narysować boxplot w R?
 
 Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
 
 ### Base R
 
-Do narysowania wykresu pudełkowego wykorzystaj funckję `boxplot`. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli$nazwa_kolumny albo skorzystać z formuły nazwa_tabeli$kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.
+Do narysowania wykresu pudełkowego wykorzystaj funckję `boxplot`. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z \$ np. nazwa_tabeli\$nazwa_kolumny albo skorzystać z formuły: nazwa_tabeli$kolumna_z_danymi_liczbowymi ~ nazwa_tabeli\$kolumna_z_grupami.
 
 ```{r}
 data_box <- read.table('data/data_test.txt')
@@ -22,7 +24,7 @@ boxplot(data_box$x ~ data_box$rozklad)
 
 ### ggplot2
 
-Do narysowania histogramu wykorzystaj funckje `ggplot` i `geom_boxplot`
+Do narysowania histogramu wykorzystaj funkcje `ggplot` i `geom_boxplot`
 
 W funkcji `ggplot` podaj nazwę tabeli, nazwę kolumny z danymi liczbowymi i nazwę kolumny z grupami: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_grupy, y = nazwa_kolumny_liczby))`. Potem dodaj do niej `geom_boxplot()`. 
 
@@ -36,7 +38,7 @@ ggplot(data_box, aes(x = rozklad, y = x))+
 
 ```
 
-Wykres pudełkowy można połączyć z wykresem wiolinowym pokazującym kształt rozkładu używając funkcji `geom_violin` lub dodać do niego wszystkie obserwacje jako punkty używając `geom_jitter`. Możesz również sprawdzić dodatkowy pakiet ggbeeswarm, który zawiera inne funckje umożliwiające dodanie obserwacji do wykresu.
+Wykres pudełkowy można połączyć z wykresem wiolinowym pokazującym kształt rozkładu używając funkcji `geom_violin` lub dodać do niego wszystkie obserwacje jako punkty używając `geom_jitter`. Polecam sprawdzić dodatkowy pakiet ggbeeswarm, który zawiera inne funckje umożliwiające dodanie obserwacji do wykresu.
 
 ```{r}
 ggplot(data_box, aes(x = rozklad, y = x))+

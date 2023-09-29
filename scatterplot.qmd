@@ -1,0 +1,58 @@
+---
+title: "Wykres kropkowy"
+---
+
+Wykres kropkowy albo wykres rozrzutu (ang. *scatterplot*). Umożliwia wizualizację zależności pomiędzy dwiema zmiennymi ilościowymi.
+
+## Jak narysować wykres rozrzutu w R?
+
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
+
+### Base R
+
+Do narysowanie wykresu rozrzutu można użyć funkcji `plot`, w której jako dwa pierwsze argumenty należy podać kolumny tabeli z danymi np. plot(tabela\$kolumna_1, tabela\$kolumna_2)
+
+```{r}
+# wczytanie danych dotyczących wielkości genomów bakteryjnych
+genomes <- read.table('data/genomes.txt')
+
+# wykres zależności wielkości genomu od procenta par GC
+plot(genomes$size, genomes$GC)
+
+# dodanie koloru według środowiska życia i legendy
+plot(genomes$size, genomes$GC, col = factor(genomes$habitat, 
+                                            levels = c("Aquatic", "Specialized", "Multiple", "Terrestrial", "Host-associated", "")))
+legend(10, 50, legend=c( "Aquatic", "Specialized", "Multiple", "Terrestrial", "Host-associated", ""),
+       col = palette()[1:6], cex = 0.8, pch = 21)
+
+```
+
+### ggplot2
+
+Do narysowania histogramu wykorzystaj funkcje `ggplot` i `geom_point`.
+
+W funkcji `ggplot` podaj nazwę tabeli i nazwę kolumn z danymi: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_1, y = nazwa_kolumny_2))`. Potem dodaj `geom_point()`. W aes możesz też podać trzecią kolumnę, która pozwoli na pokolorowanie punktów według zmiennej jakościowej. Legenda zostanie utworzona automatycznie.
+
+```{r}
+# wczytanie biblioteki
+library(ggplot2)
+# wykres zależności wielkości genomu od procenta GC
+ggplot(genomes, aes(x = size, y = GC))+
+  geom_point()
+
+# ten sam wykres pokolorowany według środowiska życia
+ggplot(genomes, aes(x = size, y = GC, color = habitat))+
+  geom_point()+
+  theme_bw()
+
+# zmiana skali koloru na Rcolorbrewer
+ggplot(genomes, aes(x = size, y = GC, color = habitat))+
+  geom_point()+
+  theme_bw()+
+  scale_color_brewer(palette = 'Set1')
+
+
+```
+
+## Jak narysować wykres rozrzutu w Excel?
+

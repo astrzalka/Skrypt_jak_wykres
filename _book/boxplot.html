@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./barplot.html" rel="next">
 <link href="./histogram.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -91,12 +91,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -112,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./boxplot.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Boxplot</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -126,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/astrzalka/Skrypt_jak_wykres" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/astrzalka/Skrypt_jak_wykres" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -159,6 +158,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="./boxplot.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Boxplot</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./barplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Wykres słupkowy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./scatterplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres kropkowy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -206,12 +217,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<p>Wykres pudełkowy (ang. <em>boxplot</em>) pozwala na wizualizację pewnych cech rozkładu zmiennej, zwykle jest to mediana oraz pierwszy i trzeci kwartyl.</p>
 <section id="jak-narysować-boxplot-w-r" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="jak-narysować-boxplot-w-r"><span class="header-section-number">3.1</span> Jak narysować boxplot w R?</h2>
 <p>Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w <a href="./wczytanie_danych.html">Jak wczytać dane do R</a></p>
 <section id="base-r" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">3.1.1</span> Base R</h3>
-<p>Do narysowania wykresu pudełkowego wykorzystaj funckję <code>boxplot</code>. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli<span class="math inline">\(nazwa_kolumny albo skorzystać z formuły nazwa_tabeli\)</span>kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.</p>
+<p>Do narysowania wykresu pudełkowego wykorzystaj funckję <code>boxplot</code>. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli$nazwa_kolumny albo skorzystać z formuły nazwa_tabeli$kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_box <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">'data/data_test.txt'</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -227,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="ggplot2" class="level3" data-number="3.1.2">
 <h3 data-number="3.1.2" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">3.1.2</span> ggplot2</h3>
-<p>Do narysowania histogramu wykorzystaj funckje <code>ggplot</code> i <code>geom_boxplot</code></p>
+<p>Do narysowania histogramu wykorzystaj funkcje <code>ggplot</code> i <code>geom_boxplot</code></p>
 <p>W funkcji <code>ggplot</code> podaj nazwę tabeli, nazwę kolumny z danymi liczbowymi i nazwę kolumny z grupami: <code>ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_grupy, y = nazwa_kolumny_liczby))</code>. Potem dodaj do niej <code>geom_boxplot()</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytaj bibliotekę ggplot2</span></span>
@@ -239,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="boxplot_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Wykres pudełkowy można połączyć z wykresem wiolinowym pokazującym kształt rozkładu używając funkcji <code>geom_violin</code> lub dodać do niego wszystkie obserwacje jako punkty używając <code>geom_jitter</code>. Możesz również sprawdzić dodatkowy pakiet ggbeeswarm, który zawiera inne funckje umożliwiające dodanie obserwacji do wykresu.</p>
+<p>Wykres pudełkowy można połączyć z wykresem wiolinowym pokazującym kształt rozkładu używając funkcji <code>geom_violin</code> lub dodać do niego wszystkie obserwacje jako punkty używając <code>geom_jitter</code>. Polecam sprawdzić dodatkowy pakiet ggbeeswarm, który zawiera inne funckje umożliwiające dodanie obserwacji do wykresu.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_box, <span class="fu">aes</span>(<span class="at">x =</span> rozklad, <span class="at">y =</span> x))<span class="sc">+</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>)<span class="sc">+</span> <span class="co"># width zmienia szerokość pudełka</span></span>
@@ -506,8 +518,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./barplot.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Wykres słupkowy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

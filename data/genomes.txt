@@ -1,0 +1,725 @@
+"organism" "group" "size" "GC" "habitat" "temp.group" "temperature"
+"1" "Acaryochloris marina MBIC11017" "Cyanobacteria" 8.36 47 "Aquatic" "Mesophilic" NA
+"2" "Acholeplasma laidlawii PG-8A" "Firmicutes" 1.5 31.9 "Specialized" "Mesophilic" 37
+"3" "Acidiphilium cryptum JF-5" "Alphaproteobacteria" 3.97 67.1 "Multiple" "Mesophilic" 35
+"4" "Acidithiobacillus ferrooxidans ATCC 53993" "Other Bacteria" 2.9 58.9 "Specialized" "Mesophilic" NA
+"5" "Acidothermus cellulolyticus 11B" "Actinobacteria" 2.4 66.9 "Aquatic" "Thermophilic" 58
+"6" "Acidovorax avenae subsp. citrulli AAC00-1" "Betaproteobacteria" 5.4 68.5 "Multiple" "Mesophilic" NA
+"7" "Acidovorax sp. JS42" "Betaproteobacteria" 4.54 66.1 "Terrestrial" "Mesophilic" NA
+"8" "Acinetobacter baumannii AB0057" "Gammaproteobacteria" 4.11 39.2 "Multiple" "Mesophilic" NA
+"9" "Acinetobacter baumannii ACICU" "Gammaproteobacteria" 3.99 38.9 "Aquatic" "Mesophilic" 37
+"10" "Acinetobacter baumannii ATCC 17978" "Gammaproteobacteria" 4.02 38.9 "Multiple" "Mesophilic" NA
+"11" "Acinetobacter baumannii AYE" "Gammaproteobacteria" 3.99 39.3 "Aquatic" "Mesophilic" NA
+"12" "Acinetobacter baumannii SDF" "Gammaproteobacteria" 3.45 39.1 "Aquatic" "Mesophilic" 37
+"13" "Acinetobacter sp. ADP1" "Gammaproteobacteria" 3.6 40.4 "Multiple" "Mesophilic" 37
+"14" "Actinobacillus pleuropneumoniae L20" "Gammaproteobacteria" 2.3 41.3 "Host-associated" "Mesophilic" NA
+"15" "Actinobacillus pleuropneumoniae serovar 3 str. JL03" "Gammaproteobacteria" 2.2 41.2 "Host-associated" "Mesophilic" 37
+"16" "Actinobacillus pleuropneumoniae serovar 7 str. AP76" "Gammaproteobacteria" 2.31 41.2 "Host-associated" "Mesophilic" NA
+"17" "Actinobacillus succinogenes 130Z" "Gammaproteobacteria" 2.3 44.9 "Host-associated" "Mesophilic" 37
+"18" "Aeromonas hydrophila subsp. hydrophila ATCC 7966" "Gammaproteobacteria" 4.7 61.5 "Multiple" "Mesophilic" 25
+"19" "Aeromonas salmonicida subsp. salmonicida A449" "Gammaproteobacteria" 5.03 58.2 "Aquatic" "Mesophilic" NA
+"20" "Aeropyrum pernix K1" "Crenarchaeota" 1.7 56.3 "Specialized" "Hyperthermophilic" 92.5
+"21" "Agrobacterium tumefaciens str. C58" "Alphaproteobacteria" 5.65 59 "Multiple" "Mesophilic" 26.5
+"22" "Akkermansia muciniphila ATCC BAA-835" "Other Bacteria" 2.7 55.8 "Host-associated" "Mesophilic" 37
+"23" "Alcanivorax borkumensis SK2" "Gammaproteobacteria" 3.1 54.7 "Aquatic" "Mesophilic" NA
+"24" "Aliivibrio salmonicida LFI1238" "Gammaproteobacteria" 4.54 39 "Aquatic" "Psychrophilic" NA
+"25" "Alkaliphilus metalliredigens QYMF" "Firmicutes" 4.9 36.8 "Specialized" "Mesophilic" NA
+"26" "Alkaliphilus oremlandii OhILAs" "Firmicutes" 3.1 36.3 "Aquatic" "Mesophilic" NA
+"27" "Alteromonas macleodii Deep ecotype" "Gammaproteobacteria" 4.4 44.9 "Aquatic" "Mesophilic" NA
+"28" "Anaeromyxobacter dehalogenans 2CP-C" "Deltaproteobacteria" 5 74.9 "Terrestrial" "Mesophilic" 30
+"29" "Anaeromyxobacter sp. K" "Deltaproteobacteria" 5.1 74.8 "Terrestrial" "Mesophilic" NA
+"30" "Anaplasma marginale str. St. Maries" "Alphaproteobacteria" 1.2 49.8 "Host-associated" "Mesophilic" NA
+"31" "Anaplasma phagocytophilum HZ" "Alphaproteobacteria" 1.47 41.6 "Host-associated" "Mesophilic" 37
+"32" "Anoxybacillus flavithermus WK1" "Firmicutes" 2.8 41.8 "Specialized" "Thermophilic" 62.5
+"33" "Aquifex aeolicus VF5" "Aquificae" 1.59 43.3 "Specialized" "Hyperthermophilic" 96
+"34" "Archaeoglobus fulgidus DSM 4304" "Euryarchaeota" 2.18 48.6 "Aquatic" "Hyperthermophilic" 83
+"35" "Arcobacter butzleri RM4018" "Epsilonproteobacteria" 2.3 27 "Multiple" "Mesophilic" NA
+"36" "Aromatoleum aromaticum EbN1" "Betaproteobacteria" 4.73 64.7 "Terrestrial" "Mesophilic" 26
+"37" "Arthrobacter aurescens TC1" "Actinobacteria" 5.23 62.4 "Terrestrial" "Mesophilic" 30
+"38" "Arthrobacter sp. FB24" "Actinobacteria" 5.08 65.4 "Terrestrial" "Mesophilic" NA
+"39" "Aster yellows witches-broom phytoplasma AYWB" "Firmicutes" 0.73 26.8 "Host-associated" "Mesophilic" NA
+"40" "Azoarcus sp. BH72" "Betaproteobacteria" 4.4 67.9 "Host-associated" "Mesophilic" NA
+"41" "Bacillus amyloliquefaciens FZB42" "Firmicutes" 3.9 46.5 "Terrestrial" "Mesophilic" NA
+"42" "Bacillus anthracis str. Ames" "Firmicutes" 5.23 35.4 "Multiple" "Mesophilic" NA
+"43" "Bacillus anthracis str. Ames Ancestor" "Firmicutes" 5.5 35.2 "Terrestrial" "Mesophilic" NA
+"44" "Bacillus anthracis str. Sterne" "Firmicutes" 5.23 35.4 "Multiple" "Mesophilic" NA
+"45" "Bacillus cereus ATCC 10987" "Firmicutes" 5.43 35.5 "Terrestrial" "Mesophilic" 30
+"46" "Bacillus cereus ATCC 14579" "Firmicutes" 5.42 35.3 "Terrestrial" "Mesophilic" 30
+"47" "Bacillus cereus E33L" "Firmicutes" 5.85 35.1 "Terrestrial" "Mesophilic" 30
+"48" "Bacillus cereus subsp. cytotoxis NVH 391-98" "Firmicutes" 4.11 35.9 "Terrestrial" "Mesophilic" NA
+"49" "Bacillus clausii KSM-K16" "Firmicutes" 4.3 44.8 "Specialized" "Mesophilic" NA
+"50" "Bacillus halodurans C-125" "Firmicutes" 4.2 43.7 "Multiple" "Mesophilic" NA
+"51" "Bacillus licheniformis ATCC 14580" "Firmicutes" 4.2 46.2 "Terrestrial" "Mesophilic" NA
+"52" "Bacillus pumilus SAFR-032" "Firmicutes" 3.7 41.3 "Terrestrial" "Mesophilic" NA
+"53" "Bacillus subtilis subsp. subtilis str. 168" "Firmicutes" 4.2 43.5 "Terrestrial" "Mesophilic" 30
+"54" "Bacillus thuringiensis serovar konkukian str. 97-27" "Firmicutes" 5.28 35.4 "Multiple" "Mesophilic" NA
+"55" "Bacillus thuringiensis str. Al Hakam" "Firmicutes" 5.36 35.4 "Multiple" "Mesophilic" NA
+"56" "Bacillus weihenstephanensis KBAB4" "Firmicutes" 5.91 35.5 "Terrestrial" "Mesophilic" NA
+"57" "Bacteroides fragilis NCTC 9343" "Bacteroidetes/Chlorobi" 5.24 43.1 "Host-associated" "Mesophilic" 37
+"58" "Bacteroides fragilis YCH46" "Bacteroidetes/Chlorobi" 5.31 43.2 "Host-associated" "Mesophilic" 37
+"59" "Bacteroides thetaiotaomicron VPI-5482" "Bacteroidetes/Chlorobi" 6.33 42.9 "Host-associated" "Mesophilic" NA
+"60" "Bacteroides vulgatus ATCC 8482" "Bacteroidetes/Chlorobi" 5.2 42.2 "Host-associated" "Mesophilic" NA
+"61" "Bartonella bacilliformis KC583" "Alphaproteobacteria" 1.4 38.2 "Host-associated" "Mesophilic" 28
+"62" "Bartonella henselae str. Houston-1" "Alphaproteobacteria" 1.93 38.2 "Host-associated" "Mesophilic" 37
+"63" "Bartonella quintana str. Toulouse" "Alphaproteobacteria" 1.58 38.8 "Host-associated" "Mesophilic" 37
+"64" "Bartonella tribocorum CIP 105476" "Alphaproteobacteria" 2.62 38.8 "Host-associated" "Mesophilic" NA
+"65" "Bdellovibrio bacteriovorus HD100" "Deltaproteobacteria" 3.8 50.6 "Multiple" "Mesophilic" 29
+"66" "Beijerinckia indica subsp. indica ATCC 9039" "Alphaproteobacteria" 4.45 57 "" "Mesophilic" 25
+"67" "Bifidobacterium adolescentis ATCC 15703" "Actinobacteria" 2.1 59.2 "Host-associated" "Mesophilic" 37
+"68" "Bifidobacterium longum DJO10A" "Actinobacteria" 2.41 60.2 "Host-associated" "Mesophilic" 39
+"69" "Bifidobacterium longum NCC2705" "Actinobacteria" 2.26 60.1 "Host-associated" "Mesophilic" 39
+"70" "Bordetella avium 197N" "Betaproteobacteria" 3.7 61.6 "Host-associated" "Mesophilic" 36
+"71" "Bordetella bronchiseptica RB50" "Betaproteobacteria" 5.3 68.1 "Host-associated" "Mesophilic" 36
+"72" "Bordetella parapertussis 12822" "Betaproteobacteria" 4.77 68.1 "Host-associated" "Mesophilic" 36
+"73" "Bordetella pertussis Tohama I" "Betaproteobacteria" 4.09 67.7 "Host-associated" "Mesophilic" 36
+"74" "Bordetella petrii DSM 12804" "Betaproteobacteria" 5.3 65.5 "Aquatic" "Mesophilic" NA
+"75" "Borrelia afzelii PKo" "Spirochaetes" 1.24 27.8 "Host-associated" "Mesophilic" NA
+"76" "Borrelia burgdorferi B31" "Spirochaetes" 1.52 28.2 "Host-associated" "Mesophilic" NA
+"77" "Borrelia duttonii Ly" "Spirochaetes" 1.57 28 "Host-associated" "Psychrophilic" NA
+"78" "Borrelia garinii PBi" "Spirochaetes" 0.98 28.1 "Host-associated" "Mesophilic" NA
+"79" "Borrelia hermsii DAH" "Spirochaetes" 0.92 29.8 "Host-associated" "Mesophilic" NA
+"80" "Borrelia recurrentis A1" "Spirochaetes" 1.24 27.5 "Host-associated" "Mesophilic" NA
+"81" "Borrelia turicatae 91E135" "Spirochaetes" 0.92 29.1 "Host-associated" "Mesophilic" NA
+"82" "Bradyrhizobium japonicum USDA 110" "Alphaproteobacteria" 9.1 64.1 "Host-associated" "Mesophilic" 27.5
+"83" "Bradyrhizobium sp. BTAi1" "Alphaproteobacteria" 8.53 64.8 "Host-associated" "Mesophilic" NA
+"84" "Bradyrhizobium sp. ORS278" "Alphaproteobacteria" 7.5 65.5 "Host-associated" "Mesophilic" NA
+"85" "Brucella abortus bv. 1 str. 9-941" "Alphaproteobacteria" 3.29 57.2 "Host-associated" "Mesophilic" 37
+"86" "Brucella abortus S19" "Alphaproteobacteria" 3.3 57.2 "Multiple" "Mesophilic" 37
+"87" "Brucella melitensis 16M" "Alphaproteobacteria" 3.29 57.2 "Host-associated" "Mesophilic" 37
+"88" "Brucella melitensis biovar Abortus 2308" "Alphaproteobacteria" 3.28 57.2 "Host-associated" "Mesophilic" NA
+"89" "Brucella ovis ATCC 25840" "Alphaproteobacteria" 3.3 57.2 "Host-associated" "Mesophilic" 37
+"90" "Brucella suis 1330" "Alphaproteobacteria" 3.32 57.3 "Host-associated" "Mesophilic" 37
+"91" "Brucella suis ATCC 23445" "Alphaproteobacteria" 3.3 57.2 "Host-associated" "Mesophilic" 37
+"92" "Buchnera aphidicola str. APS (Acyrthosiphon pisum)" "Gammaproteobacteria" 0.66 26.4 "Host-associated" "Mesophilic" NA
+"93" "Buchnera aphidicola str. Bp (Baizongia pistaciae)" "Gammaproteobacteria" 0.62 25.3 "Host-associated" "Mesophilic" NA
+"94" "Buchnera aphidicola str. Cc (Cinara cedri)" "Gammaproteobacteria" 0.42 20.1 "Host-associated" "Mesophilic" NA
+"95" "Buchnera aphidicola str. Sg (Schizaphis graminum)" "Gammaproteobacteria" 0.64 25.3 "Host-associated" "Mesophilic" NA
+"96" "Burkholderia ambifaria AMMD" "Betaproteobacteria" 7.53 66.8 "Multiple" "Mesophilic" 36
+"97" "Burkholderia ambifaria MC40-6" "Betaproteobacteria" 7.6 66.4 "Multiple" "Mesophilic" NA
+"98" "Burkholderia cenocepacia MC0-3" "Betaproteobacteria" 7.9 66.6 "Multiple" "Mesophilic" NA
+"99" "Burkholderia mallei ATCC 23344" "Betaproteobacteria" 5.83 68.5 "Host-associated" "Mesophilic" NA
+"100" "Burkholderia mallei NCTC 10229" "Betaproteobacteria" 5.8 68.5 "Host-associated" "Mesophilic" NA
+"101" "Burkholderia mallei NCTC 10247" "Betaproteobacteria" 5.9 68.5 "Host-associated" "Mesophilic" NA
+"102" "Burkholderia mallei SAVP1" "Betaproteobacteria" 5.2 68.4 "Host-associated" "Mesophilic" NA
+"103" "Burkholderia multivorans ATCC 17616" "Betaproteobacteria" 6.99 66.7 "Host-associated" "Mesophilic" 37
+"104" "Burkholderia phymatum STM815" "Betaproteobacteria" 8.7 62.3 "Host-associated" "Mesophilic" NA
+"105" "Burkholderia phytofirmans PsJN" "Betaproteobacteria" 8.22 62.3 "Terrestrial" "Mesophilic" 30
+"106" "Burkholderia pseudomallei 1106a" "Betaproteobacteria" 7.1 68.3 "Terrestrial" "Mesophilic" NA
+"107" "Burkholderia pseudomallei 1710b" "Betaproteobacteria" 7.31 68 "Terrestrial" "Mesophilic" NA
+"108" "Burkholderia pseudomallei 668" "Betaproteobacteria" 7 68.3 "Terrestrial" "Mesophilic" NA
+"109" "Burkholderia pseudomallei K96243" "Betaproteobacteria" 7.3 68.1 "Terrestrial" "Mesophilic" NA
+"110" "Burkholderia thailandensis E264" "Betaproteobacteria" 6.72 67.6 "Terrestrial" "Mesophilic" 33.5
+"111" "Burkholderia xenovorans LB400" "Betaproteobacteria" 9.8 62.6 "Multiple" "Mesophilic" 30
+"112" "Caldicellulosiruptor saccharolyticus DSM 8903" "Other Bacteria" 3 35.3 "Specialized" "Thermophilic" NA
+"113" "Caldivirga maquilingensis IC-167" "Crenarchaeota" 2.1 43.1 "Specialized" "Hyperthermophilic" 85
+"114" "Campylobacter concisus 13826" "Epsilonproteobacteria" 2.15 39.3 "Host-associated" "Mesophilic" NA
+"115" "Campylobacter curvus 525.92" "Epsilonproteobacteria" 2 44.5 "Host-associated" "Mesophilic" NA
+"116" "Campylobacter fetus subsp. fetus 82-40" "Epsilonproteobacteria" 1.8 33.3 "Host-associated" "Mesophilic" NA
+"117" "Campylobacter hominis ATCC BAA-381" "Epsilonproteobacteria" 1.7 31.7 "Host-associated" "Mesophilic" 37
+"118" "Campylobacter jejuni RM1221" "Epsilonproteobacteria" 1.8 30.3 "Multiple" "Mesophilic" NA
+"119" "Campylobacter jejuni subsp. doylei 269.97" "Epsilonproteobacteria" 1.8 30.6 "Multiple" "Mesophilic" NA
+"120" "Campylobacter jejuni subsp. jejuni 81116" "Epsilonproteobacteria" 1.6 30.5 "Multiple" "Mesophilic" NA
+"121" "Campylobacter jejuni subsp. jejuni 81-176" "Epsilonproteobacteria" 1.68 30.5 "Multiple" "Mesophilic" NA
+"122" "Campylobacter jejuni subsp. jejuni NCTC 11168" "Epsilonproteobacteria" 1.6 30.5 "Multiple" "Mesophilic" NA
+"123" "Candidatus Blochmannia floridanus" "Gammaproteobacteria" 0.71 27.4 "Host-associated" "Mesophilic" NA
+"124" "Candidatus Methanoregula boonei 6A8" "Euryarchaeota" 2.5 54.5 "Terrestrial" "Mesophilic" 37
+"125" "Candidatus Pelagibacter ubique HTCC1062" "Alphaproteobacteria" 1.3 29.7 "Aquatic" "Mesophilic" NA
+"126" "Candidatus Phytoplasma australiense" "Firmicutes" 0.88 27.4 "Host-associated" "Mesophilic" NA
+"127" "Candidatus Phytoplasma mali" "Other Bacteria" 0.6 21.4 "Host-associated" "Mesophilic" NA
+"128" "Candidatus Protochlamydia amoebophila UWE25" "Chlamydiae/Verrucomicrobia" 2.41 34.7 "Host-associated" "Mesophilic" NA
+"129" "Candidatus Vesicomyosocius okutanii HA" "Gammaproteobacteria" 1 31.6 "Host-associated" "Mesophilic" NA
+"130" "Carboxydothermus hydrogenoformans Z-2901" "Firmicutes" 2.4 42 "Aquatic" "Hyperthermophilic" 78
+"131" "Caulobacter crescentus CB15" "Alphaproteobacteria" 4 67.2 "Aquatic" "Mesophilic" 35
+"132" "Caulobacter sp. K31" "Alphaproteobacteria" 5.91 67.3 "Aquatic" "Mesophilic" NA
+"133" "Cellvibrio japonicus Ueda107" "Gammaproteobacteria" 4.6 52 "Terrestrial" "Mesophilic" NA
+"134" "Chlamydia muridarum Nigg" "Chlamydiae/Verrucomicrobia" 1.08 40.3 "Host-associated" "Mesophilic" 37
+"135" "Chlamydia trachomatis 434/Bu" "Chlamydiae/Verrucomicrobia" 1 41.3 "Host-associated" "Mesophilic" NA
+"136" "Chlamydia trachomatis A/HAR-13" "Chlamydiae/Verrucomicrobia" 1.01 41.3 "Host-associated" "Mesophilic" NA
+"137" "Chlamydia trachomatis D/UW-3/CX" "Chlamydiae/Verrucomicrobia" 1.04 41.3 "Host-associated" "Mesophilic" 37
+"138" "Chlamydia trachomatis L2b/UCH-1/proctitis" "Chlamydiae/Verrucomicrobia" 1 41.3 "Host-associated" "Mesophilic" NA
+"139" "Chlamydophila abortus S26/3" "Chlamydiae/Verrucomicrobia" 1.14 39.9 "Host-associated" "Mesophilic" 37
+"140" "Chlamydophila caviae GPIC" "Chlamydiae/Verrucomicrobia" 1.18 39.2 "Host-associated" "Mesophilic" 37
+"141" "Chlamydophila felis Fe/C-56" "Chlamydiae/Verrucomicrobia" 1.21 39.3 "Host-associated" "Mesophilic" 37
+"142" "Chlamydophila pneumoniae AR39" "Chlamydiae/Verrucomicrobia" 1.23 40.6 "Host-associated" "Mesophilic" 37
+"143" "Chlamydophila pneumoniae CWL029" "Chlamydiae/Verrucomicrobia" 1.2 40.6 "Host-associated" "Mesophilic" 37
+"144" "Chlamydophila pneumoniae J138" "Chlamydiae/Verrucomicrobia" 1.2 40.6 "Host-associated" "Mesophilic" 37
+"145" "Chlamydophila pneumoniae TW-183" "Chlamydiae/Verrucomicrobia" 1.23 40.6 "Host-associated" "Mesophilic" 37
+"146" "Chlorobaculum parvum NCIB 8327" "Bacteroidetes/Chlorobi" 2.3 55.8 "Aquatic" "Mesophilic" NA
+"147" "Chlorobium chlorochromatii CaD3" "Bacteroidetes/Chlorobi" 2.6 44.3 "Aquatic" "Mesophilic" NA
+"148" "Chlorobium limicola DSM 245" "Bacteroidetes/Chlorobi" 2.8 51.3 "Aquatic" "Mesophilic" NA
+"149" "Chlorobium phaeobacteroides BS1" "Bacteroidetes/Chlorobi" 2.7 48.9 "Aquatic" "Mesophilic" NA
+"150" "Chlorobium phaeobacteroides DSM 266" "Bacteroidetes/Chlorobi" 3.1 48.4 "Aquatic" "Mesophilic" NA
+"151" "Chlorobium phaeovibrioides DSM 265" "Bacteroidetes/Chlorobi" 2 53 "Aquatic" "Mesophilic" NA
+"152" "Chlorobium tepidum TLS" "Bacteroidetes/Chlorobi" 2.15 56.5 "Specialized" "Thermophilic" 48
+"153" "Chloroflexus aurantiacus J-10-fl" "Chloroflexi" 5.3 56.7 "Specialized" "Thermophilic" 56
+"154" "Chloroherpeton thalassium ATCC 35110" "Bacteroidetes/Chlorobi" 3.3 45 "Aquatic" "Mesophilic" NA
+"155" "Chromobacterium violaceum ATCC 12472" "Betaproteobacteria" 4.8 64.8 "Multiple" "Mesophilic" 25
+"156" "Chromohalobacter salexigens DSM 3043" "Gammaproteobacteria" 3.7 63.9 "Specialized" "Mesophilic" 37
+"157" "Citrobacter koseri ATCC BAA-895" "Gammaproteobacteria" 4.71 53.8 "Multiple" "Mesophilic" NA
+"158" "Clavibacter michiganensis subsp. michiganensis NCPPB 382" "Actinobacteria" 3.4 72.5 "Multiple" "Mesophilic" 26.5
+"159" "Clavibacter michiganensis subsp. sepedonicus" "Actinobacteria" 3.44 72.4 "Multiple" "Mesophilic" 26.5
+"160" "Clostridium acetobutylicum ATCC 824" "Firmicutes" 4.13 30.9 "Multiple" "Mesophilic" 37.5
+"161" "Clostridium beijerinckii NCIMB 8052" "Firmicutes" 6 29.9 "" "Mesophilic" NA
+"162" "Clostridium botulinum A str. ATCC 19397" "Firmicutes" 3.9 28.2 "Multiple" "Mesophilic" 37
+"163" "Clostridium botulinum A str. ATCC 3502" "Firmicutes" 3.92 28.2 "Multiple" "Mesophilic" 37
+"164" "Clostridium botulinum A str. Hall" "Firmicutes" 3.8 28.2 "Multiple" "Mesophilic" 37
+"165" "Clostridium botulinum A3 str. Loch Maree" "Firmicutes" 4.27 28.1 "Multiple" "Mesophilic" 37
+"166" "Clostridium botulinum B str. Eklund 17B" "Firmicutes" 3.85 27.5 "Multiple" "Mesophilic" 37
+"167" "Clostridium botulinum B1 str. Okra" "Firmicutes" 4.15 28.2 "Multiple" "Mesophilic" 37
+"168" "Clostridium botulinum E3 str. Alaska E43" "Firmicutes" 3.7 27.4 "Multiple" "Mesophilic" 30
+"169" "Clostridium botulinum F str. Langeland" "Firmicutes" 4.02 28.3 "Multiple" "Mesophilic" 37
+"170" "Clostridium difficile 630" "Firmicutes" 4.31 29.1 "Multiple" "Mesophilic" 37
+"171" "Clostridium kluyveri DSM 555" "Firmicutes" 4.06 32 "Aquatic" "Mesophilic" NA
+"172" "Clostridium perfringens ATCC 13124" "Firmicutes" 3.3 28.4 "Multiple" "Mesophilic" 37
+"173" "Clostridium perfringens SM101" "Firmicutes" 2.9 28.2 "Multiple" "Mesophilic" 37
+"174" "Clostridium perfringens str. 13" "Firmicutes" 3.05 28.5 "Multiple" "Mesophilic" 37
+"175" "Clostridium phytofermentans ISDg" "Firmicutes" 4.8 35.3 "Terrestrial" "Mesophilic" 37
+"176" "Clostridium tetani E88" "Firmicutes" 2.87 28.6 "Multiple" "Mesophilic" 37
+"177" "Clostridium thermocellum ATCC 27405" "Firmicutes" 3.8 39 "Multiple" "Thermophilic" 60
+"178" "Colwellia psychrerythraea 34H" "Gammaproteobacteria" 5.37 38 "Specialized" "Psychrophilic" 8
+"179" "Coprothermobacter proteolyticus DSM 5265" "Firmicutes" 1.4 44.8 "Specialized" "Thermophilic" 63
+"180" "Corynebacterium diphtheriae NCTC 13129" "Actinobacteria" 2.49 53.5 "Host-associated" "Mesophilic" 37
+"181" "Corynebacterium efficiens YS-314" "Actinobacteria" 3.15 63.1 "Multiple" "Mesophilic" 37.5
+"182" "Corynebacterium glutamicum ATCC 13032" "Actinobacteria" 3.3 53.8 "Multiple" "Mesophilic" 35
+"183" "Corynebacterium glutamicum R" "Actinobacteria" 3.35 54.1 "Multiple" "Mesophilic" 35
+"184" "Corynebacterium jeikeium K411" "Actinobacteria" 2.48 61.4 "Multiple" "Mesophilic" NA
+"185" "Corynebacterium urealyticum DSM 7109" "Actinobacteria" 2.37 64.2 "Host-associated" "Mesophilic" NA
+"186" "Coxiella burnetii CbuG_Q212" "Gammaproteobacteria" 2 42.6 "Multiple" "Mesophilic" NA
+"187" "Coxiella burnetii CbuK_Q154" "Gammaproteobacteria" 2.14 42.6 "Multiple" "Mesophilic" NA
+"188" "Coxiella burnetii Dugway 5J108-111" "Gammaproteobacteria" 2.25 42.4 "Host-associated" "Mesophilic" 37
+"189" "Coxiella burnetii RSA 331" "Gammaproteobacteria" 2.04 42.7 "Multiple" "Mesophilic" NA
+"190" "Coxiella burnetii RSA 493" "Gammaproteobacteria" 2.03 42.6 "Multiple" "Mesophilic" 37
+"191" "Cupriavidus taiwanensis" "Betaproteobacteria" 6.46 67 "Host-associated" "Mesophilic" NA
+"192" "Cyanothece sp. ATCC 51142" "Cyanobacteria" 5.43 37.9 "Aquatic" "Mesophilic" NA
+"193" "Cytophaga hutchinsonii ATCC 33406" "Bacteroidetes/Chlorobi" 4.4 38.8 "Multiple" "Mesophilic" 30
+"194" "Dehalococcoides ethenogenes 195" "Chloroflexi" 1.47 48.9 "Multiple" "Mesophilic" 35
+"195" "Dehalococcoides sp. CBDB1" "Chloroflexi" 1.4 47 "Multiple" "Mesophilic" NA
+"196" "Deinococcus geothermalis DSM 11300" "Deinococcus-Thermus" 3.25 66.5 "Aquatic" "Mesophilic" 47
+"197" "Deinococcus radiodurans R1" "Deinococcus-Thermus" 3.24 66.6 "Terrestrial" "Mesophilic" 33.5
+"198" "Delftia acidovorans SPH-1" "Betaproteobacteria" 6.8 66.5 "Multiple" "Mesophilic" 30
+"199" "Desulfitobacterium hafniense Y51" "Firmicutes" 5.73 47.4 "Specialized" "Mesophilic" NA
+"200" "Desulfococcus oleovorans Hxd3" "Deltaproteobacteria" 3.9 56.2 "Aquatic" "Mesophilic" NA
+"201" "Desulfotalea psychrophila LSv54" "Deltaproteobacteria" 3.64 46.6 "Specialized" "Psychrophilic" 7
+"202" "Desulfotomaculum reducens MI-1" "Firmicutes" 3.6 42.3 "Aquatic" "Mesophilic" 37
+"203" "Desulfovibrio desulfuricans subsp. desulfuricans str. G20" "Deltaproteobacteria" 3.73 57.8 "Multiple" "Mesophilic" 32.5
+"204" "Desulfovibrio vulgaris DP4" "Deltaproteobacteria" 3.7 63.2 "Multiple" "Mesophilic" NA
+"205" "Desulfovibrio vulgaris str. Hildenborough" "Deltaproteobacteria" 3.8 63.3 "Multiple" "Mesophilic" 32.5
+"206" "Dichelobacter nodosus VCS1703A" "Gammaproteobacteria" 1.4 44.4 "Host-associated" "Mesophilic" 37
+"207" "Dictyoglomus thermophilum H-6-12" "Other Bacteria" 2 33.7 "Aquatic" "Thermophilic" 78
+"208" "Dinoroseobacter shibae DFL 12" "Alphaproteobacteria" 4.43 65.5 "" "Mesophilic" 33
+"209" "Ehrlichia ruminantium str. Gardel" "Alphaproteobacteria" 1.5 27.5 "Host-associated" "Mesophilic" NA
+"210" "Ehrlichia ruminantium str. Welgevonden" "Alphaproteobacteria" 1.52 27.5 "Host-associated" "Mesophilic" NA
+"211" "Elusimicrobium minutum Pei191" "Other Bacteria" 1.6 40 "Host-associated" "Mesophilic" NA
+"212" "Enterobacter sakazakii ATCC BAA-894" "Gammaproteobacteria" 4.56 56.7 "Host-associated" "Mesophilic" 37
+"213" "Enterococcus faecalis V583" "Firmicutes" 3.36 37.4 "Multiple" "Mesophilic" 37
+"214" "Erwinia tasmaniensis" "Gammaproteobacteria" 4.08 53.4 "Host-associated" "Mesophilic" NA
+"215" "Escherichia coli 536" "Gammaproteobacteria" 4.9 50.5 "Host-associated" "Mesophilic" NA
+"216" "Escherichia coli APEC O1" "Gammaproteobacteria" 5.51 50.3 "Host-associated" "Mesophilic" NA
+"217" "Escherichia coli ATCC 8739" "Gammaproteobacteria" 4.7 50.9 "Host-associated" "Mesophilic" NA
+"218" "Escherichia coli CFT073" "Gammaproteobacteria" 5.2 50.5 "Host-associated" "Mesophilic" 37
+"219" "Escherichia coli E24377A" "Gammaproteobacteria" 5.27 50.6 "Host-associated" "Mesophilic" 37
+"220" "Escherichia coli HS" "Gammaproteobacteria" 4.6 50.8 "Host-associated" "Mesophilic" 37
+"221" "Escherichia coli O157:H7 EDL933" "Gammaproteobacteria" 5.59 50.3 "Host-associated" "Mesophilic" 30
+"222" "Escherichia coli O157:H7 str. EC4115" "Gammaproteobacteria" 5.73 50.4 "Multiple" "Mesophilic" 37
+"223" "Escherichia coli O157:H7 str. Sakai" "Gammaproteobacteria" 5.6 50.5 "Host-associated" "Mesophilic" 37
+"224" "Escherichia coli SE11" "Gammaproteobacteria" 5.17 50.7 "Host-associated" "Mesophilic" 37
+"225" "Escherichia coli SMS-3-5" "Gammaproteobacteria" 5.25 50.5 "Multiple" "Mesophilic" 37
+"226" "Escherichia coli str. K12 substr. DH10B" "Gammaproteobacteria" 4.7 50.8 "Host-associated" "Mesophilic" 37
+"227" "Escherichia coli str. K12 substr. MG1655" "Gammaproteobacteria" 4.6 50.8 "Host-associated" "Mesophilic" 37
+"228" "Escherichia coli str. K12 substr. W3110" "Gammaproteobacteria" 4.65 50.8 "Host-associated" "Mesophilic" 37
+"229" "Escherichia coli UTI89" "Gammaproteobacteria" 5.21 50.6 "Host-associated" "Mesophilic" NA
+"230" "Exiguobacterium sibiricum 255-15" "Firmicutes" 3.01 47.7 "Specialized" "Psychrophilic" NA
+"231" "Fervidobacterium nodosum Rt17-B1" "Thermotogae" 1.9 35 "Specialized" "Thermophilic" 70
+"232" "Finegoldia magna ATCC 29328" "Firmicutes" 1.99 32.1 "Multiple" "Mesophilic" NA
+"233" "Flavobacterium johnsoniae UW101" "Bacteroidetes/Chlorobi" 6.1 34.1 "Multiple" "Mesophilic" 25
+"234" "Flavobacterium psychrophilum JIP02/86" "Bacteroidetes/Chlorobi" 2.9 32.5 "Aquatic" "Psychrophilic" NA
+"235" "Francisella novicida U112" "Gammaproteobacteria" 1.9 32.5 "Multiple" "Mesophilic" NA
+"236" "Francisella philomiragia subsp. philomiragia ATCC 25017" "Gammaproteobacteria" 2 32.6 "Multiple" "Mesophilic" NA
+"237" "Francisella tularensis subsp. holarctica" "Gammaproteobacteria" 1.9 32.2 "Host-associated" "Mesophilic" NA
+"238" "Francisella tularensis subsp. holarctica FTNF002-00" "Gammaproteobacteria" 1.9 32.2 "Multiple" "Mesophilic" NA
+"239" "Francisella tularensis subsp. holarctica OSU18" "Gammaproteobacteria" 1.9 32.2 "Multiple" "Mesophilic" NA
+"240" "Francisella tularensis subsp. mediasiatica FSC147" "Gammaproteobacteria" 1.9 32.3 "Host-associated" "Mesophilic" NA
+"241" "Francisella tularensis subsp. tularensis FSC198" "Gammaproteobacteria" 1.9 32.3 "Aquatic" "Mesophilic" NA
+"242" "Francisella tularensis subsp. tularensis SCHU S4" "Gammaproteobacteria" 1.9 32.3 "Aquatic" "Mesophilic" NA
+"243" "Francisella tularensis subsp. tularensis WY96-3418" "Gammaproteobacteria" 1.9 32.3 "Host-associated" "Mesophilic" NA
+"244" "Frankia alni ACN14a" "Actinobacteria" 7.5 72.8 "Host-associated" "Mesophilic" NA
+"245" "Frankia sp. CcI3" "Actinobacteria" 5.4 70.1 "Multiple" "Mesophilic" NA
+"246" "Frankia sp. EAN1pec" "Actinobacteria" 9 71.2 "Multiple" "Mesophilic" NA
+"247" "Fusobacterium nucleatum subsp. nucleatum ATCC 25586" "Fusobacteria" 2.17 27.2 "Host-associated" "Mesophilic" 37
+"248" "Geobacillus kaustophilus HTA426" "Firmicutes" 3.59 52 "Aquatic" "Thermophilic" NA
+"249" "Geobacillus thermodenitrificans NG80-2" "Firmicutes" 3.6 48.9 "Specialized" "Thermophilic" 65
+"250" "Geobacter bemidjiensis Bem" "Deltaproteobacteria" 4.6 60.3 "Terrestrial" "Mesophilic" 30
+"251" "Geobacter lovleyi SZ" "Deltaproteobacteria" 3.98 54.7 "Multiple" "Mesophilic" 35
+"252" "Geobacter metallireducens GS-15" "Deltaproteobacteria" 4.01 59.5 "Aquatic" "Mesophilic" 30
+"253" "Geobacter sulfurreducens PCA" "Deltaproteobacteria" 3.81 60.9 "Multiple" "Mesophilic" 30
+"254" "Geobacter uraniireducens Rf4" "Deltaproteobacteria" 5.1 54.2 "Multiple" "Mesophilic" NA
+"255" "Gloeobacter violaceus PCC 7421" "Cyanobacteria" 4.66 62 "Terrestrial" "Mesophilic" NA
+"256" "Gluconacetobacter diazotrophicus PAl 5" "Alphaproteobacteria" 4.3 66.3 "Host-associated" "Mesophilic" 30
+"257" "Gluconobacter oxydans 621H" "Alphaproteobacteria" 2.92 60.8 "Multiple" "Mesophilic" 27.5
+"258" "Gramella forsetii KT0803" "Bacteroidetes/Chlorobi" 3.8 36.6 "Multiple" "Mesophilic" NA
+"259" "Granulibacter bethesdensis CGDNIH1" "Alphaproteobacteria" 2.7 59.1 "Multiple" "Mesophilic" NA
+"260" "Haemophilus ducreyi 35000HP" "Gammaproteobacteria" 1.7 38.2 "Host-associated" "Mesophilic" 36
+"261" "Haemophilus influenzae 86-028NP" "Gammaproteobacteria" 1.9 38.2 "Host-associated" "Mesophilic" 36
+"262" "Haemophilus influenzae PittEE" "Gammaproteobacteria" 1.8 38 "Host-associated" "Mesophilic" NA
+"263" "Haemophilus influenzae PittGG" "Gammaproteobacteria" 1.9 38 "Host-associated" "Mesophilic" NA
+"264" "Haemophilus influenzae Rd KW20" "Gammaproteobacteria" 1.8 38.1 "Host-associated" "Mesophilic" 36
+"265" "Haemophilus somnus 129PT" "Gammaproteobacteria" 2.01 37.2 "Host-associated" "Mesophilic" 36
+"266" "Haemophilus somnus 2336" "Gammaproteobacteria" 2.3 37.4 "Host-associated" "Mesophilic" 36
+"267" "Hahella chejuensis KCTC 2396" "Gammaproteobacteria" 7.22 53.9 "Aquatic" "Mesophilic" NA
+"268" "Haloarcula marismortui ATCC 43049" "Euryarchaeota" 4.28 61.1 "Aquatic" "Mesophilic" 45
+"269" "Halobacterium salinarum R1" "Euryarchaeota" 2.66 65.7 "Specialized" "Thermophilic" 50
+"270" "Halobacterium sp. NRC-1" "Euryarchaeota" 2.57 65.9 "Specialized" "Mesophilic" 42
+"271" "Haloquadratum walsbyi DSM 16790" "Euryarchaeota" 3.18 47.9 "Aquatic" "Mesophilic" NA
+"272" "Halorhodospira halophila SL1" "Gammaproteobacteria" 2.7 68 "Specialized" "Mesophilic" NA
+"273" "Helicobacter acinonychis str. Sheeba" "Epsilonproteobacteria" 1.6 38.2 "Host-associated" "Mesophilic" 37
+"274" "Helicobacter hepaticus ATCC 51449" "Epsilonproteobacteria" 1.8 35.9 "Host-associated" "Mesophilic" 37
+"275" "Helicobacter pylori 26695" "Epsilonproteobacteria" 1.67 38.9 "Host-associated" "Mesophilic" 37
+"276" "Helicobacter pylori G27" "Epsilonproteobacteria" 1.71 38.9 "Host-associated" "Mesophilic" NA
+"277" "Helicobacter pylori HPAG1" "Epsilonproteobacteria" 1.61 39.1 "Host-associated" "Mesophilic" 37
+"278" "Helicobacter pylori J99" "Epsilonproteobacteria" 1.6 39.2 "Host-associated" "Mesophilic" 37
+"279" "Helicobacter pylori P12" "Epsilonproteobacteria" 1.71 38.8 "Host-associated" "Mesophilic" NA
+"280" "Helicobacter pylori Shi470" "Epsilonproteobacteria" 1.6 38.9 "Host-associated" "Mesophilic" NA
+"281" "Heliobacterium modesticaldum Ice1" "Firmicutes" 3.1 57 "Multiple" "Thermophilic" 51
+"282" "Herminiimonas arsenicoxydans" "Betaproteobacteria" 3.4 54.3 "Aquatic" "Mesophilic" NA
+"283" "Herpetosiphon aurantiacus ATCC 23779" "Chloroflexi" 6.74 50.9 "Multiple" "Mesophilic" NA
+"284" "Hydrogenobaculum sp. Y04AAS1" "Aquificae" 1.6 34.8 "Aquatic" "Thermophilic" 58
+"285" "Hyperthermus butylicus DSM 5456" "Crenarchaeota" 1.7 53.7 "Aquatic" "Hyperthermophilic" 100.5
+"286" "Hyphomonas neptunium ATCC 15444" "Alphaproteobacteria" 3.71 61.9 "Aquatic" "Mesophilic" 37
+"287" "Idiomarina loihiensis L2TR" "Gammaproteobacteria" 2.84 47 "Specialized" "Mesophilic" 25
+"288" "Ignicoccus hospitalis KIN4/I" "Crenarchaeota" 1.3 56.5 "Aquatic" "Hyperthermophilic" NA
+"289" "Jannaschia sp. CCS1" "Alphaproteobacteria" 4.39 62.2 "Aquatic" "Mesophilic" 30
+"290" "Janthinobacterium sp. Marseille" "Betaproteobacteria" 4.1 54.2 "Aquatic" "Mesophilic" NA
+"291" "Kineococcus radiotolerans SRS30216" "Actinobacteria" 4.99 74.2 "Multiple" "Mesophilic" 32
+"292" "Klebsiella pneumoniae 342" "Gammaproteobacteria" 5.88 56.9 "Host-associated" "Mesophilic" NA
+"293" "Klebsiella pneumoniae subsp. pneumoniae MGH 78578" "Gammaproteobacteria" 5.69 57.1 "Multiple" "Mesophilic" 37
+"294" "Kocuria rhizophila DC2201" "Actinobacteria" 2.7 71.2 "Multiple" "Mesophilic" NA
+"295" "Lactobacillus acidophilus NCFM" "Firmicutes" 2 34.7 "Multiple" "Mesophilic" 30
+"296" "Lactobacillus brevis ATCC 367" "Firmicutes" 2.35 46.1 "Multiple" "Mesophilic" 30
+"297" "Lactobacillus casei ATCC 334" "Firmicutes" 2.93 46.6 "Multiple" "Mesophilic" 35
+"298" "Lactobacillus casei BL23" "Firmicutes" 3.1 46.3 "Specialized" "Mesophilic" NA
+"299" "Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842" "Firmicutes" 1.86 49.7 "Multiple" "Mesophilic" NA
+"300" "Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365" "Firmicutes" 1.9 49.7 "Multiple" "Mesophilic" 42
+"301" "Lactobacillus fermentum IFO 3956" "Firmicutes" 2.1 51.5 "Multiple" "Mesophilic" NA
+"302" "Lactobacillus gasseri ATCC 33323" "Firmicutes" 1.9 35.3 "Host-associated" "Mesophilic" 30
+"303" "Lactobacillus helveticus DPC 4571" "Firmicutes" 2.1 37.1 "Multiple" "Mesophilic" NA
+"304" "Lactobacillus johnsonii NCC 533" "Firmicutes" 2 34.6 "Host-associated" "Mesophilic" 30
+"305" "Lactobacillus plantarum WCFS1" "Firmicutes" 3.34 44.4 "Host-associated" "Mesophilic" 30
+"306" "Lactobacillus reuteri F275" "Firmicutes" 2 38.9 "Host-associated" "Mesophilic" NA
+"307" "Lactobacillus reuteri JCM 1112" "Firmicutes" 2 38.9 "Host-associated" "Mesophilic" NA
+"308" "Lactobacillus sakei subsp. sakei 23K" "Firmicutes" 1.9 41.3 "Multiple" "Mesophilic" NA
+"309" "Lactobacillus salivarius UCC118" "Firmicutes" 2.1 33 "Host-associated" "Mesophilic" NA
+"310" "Lactococcus lactis subsp. cremoris MG1363" "Firmicutes" 2.5 35.7 "Multiple" "Mesophilic" 40
+"311" "Lactococcus lactis subsp. cremoris SK11" "Firmicutes" 2.56 35.8 "Multiple" "Mesophilic" 40
+"312" "Lactococcus lactis subsp. lactis Il1403" "Firmicutes" 2.4 35.3 "Multiple" "Mesophilic" 40
+"313" "Lawsonia intracellularis PHE/MN1-00" "Deltaproteobacteria" 1.76 33.1 "Host-associated" "Mesophilic" 37
+"314" "Legionella pneumophila str. Corby" "Gammaproteobacteria" 3.6 38.5 "Host-associated" "Mesophilic" NA
+"315" "Legionella pneumophila str. Lens" "Gammaproteobacteria" 3.41 38.4 "Host-associated" "Mesophilic" NA
+"316" "Legionella pneumophila str. Paris" "Gammaproteobacteria" 3.64 38.3 "Host-associated" "Mesophilic" NA
+"317" "Legionella pneumophila subsp. pneumophila str. Philadelphia 1" "Gammaproteobacteria" 3.4 38.3 "Host-associated" "Mesophilic" NA
+"318" "Leifsonia xyli subsp. xyli str. CTCB07" "Actinobacteria" 2.58 67.7 "Host-associated" "Mesophilic" 22.5
+"319" "Leptospira biflexa serovar Patoc strain Patoc 1 (Ames)" "Spirochaetes" 3.95 38.9 "Multiple" "Mesophilic" NA
+"320" "Leptospira biflexa serovar Patoc strain Patoc 1 (Paris)" "Spirochaetes" 3.95 38.9 "Multiple" "Mesophilic" NA
+"321" "Leptospira borgpetersenii serovar Hardjo-bovis JB197" "Spirochaetes" 3.9 40.2 "Host-associated" "Mesophilic" NA
+"322" "Leptospira borgpetersenii serovar Hardjo-bovis L550" "Spirochaetes" 3.92 40.2 "Host-associated" "Mesophilic" NA
+"323" "Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130" "Spirochaetes" 4.63 35 "Host-associated" "Mesophilic" 29
+"324" "Leptospira interrogans serovar Lai str. 56601" "Spirochaetes" 4.69 35 "Host-associated" "Mesophilic" 29
+"325" "Leptothrix cholodnii SP-6" "Betaproteobacteria" 4.9 68.9 "Aquatic" "Mesophilic" NA
+"326" "Leuconostoc citreum KM20" "Firmicutes" 1.9 38.9 "" "Mesophilic" NA
+"327" "Leuconostoc mesenteroides subsp. mesenteroides ATCC 8293" "Firmicutes" 2.04 37.7 "Multiple" "Mesophilic" 25
+"328" "Listeria innocua Clip11262" "Firmicutes" 3.09 37.4 "Multiple" "Mesophilic" 33.5
+"329" "Listeria monocytogenes EGD-e" "Firmicutes" 2.94 38 "Multiple" "Mesophilic" 33.5
+"330" "Listeria monocytogenes str. 4b F2365" "Firmicutes" 2.91 38 "Multiple" "Mesophilic" 33.5
+"331" "Listeria welshimeri serovar 6b str. SLCC5334" "Firmicutes" 2.8 36.4 "Multiple" "Mesophilic" NA
+"332" "Lysinibacillus sphaericus C3-41" "Firmicutes" 4.78 37.1 "Specialized" "Mesophilic" NA
+"333" "Magnetospirillum magneticum AMB-1" "Alphaproteobacteria" 5 65.1 "Aquatic" "Mesophilic" NA
+"334" "Mannheimia succiniciproducens MBEL55E" "Gammaproteobacteria" 2.3 42.5 "Host-associated" "Mesophilic" 37
+"335" "Maricaulis maris MCS10" "Alphaproteobacteria" 3.37 62.7 "Aquatic" "Mesophilic" 22.5
+"336" "Marinobacter aquaeolei VT8" "Gammaproteobacteria" 4.75 56.9 "Aquatic" "Mesophilic" 30
+"337" "Marinomonas sp. MWYL1" "Gammaproteobacteria" 5.1 42.6 "Aquatic" "Mesophilic" NA
+"338" "Mesoplasma florum L1" "Firmicutes" 0.79 27 "Host-associated" "Mesophilic" 30
+"339" "Mesorhizobium loti MAFF303099" "Alphaproteobacteria" 7.6 62.5 "Multiple" "Mesophilic" NA
+"340" "Metallosphaera sedula DSM 5348" "Crenarchaeota" 2.2 46.2 "Specialized" "Thermophilic" 70
+"341" "Methanobrevibacter smithii ATCC 35061" "Euryarchaeota" 1.9 31 "Multiple" "Mesophilic" 38.5
+"342" "Methanocaldococcus jannaschii DSM 2661" "Euryarchaeota" 1.76 31.3 "Aquatic" "Hyperthermophilic" 85
+"343" "Methanococcoides burtonii DSM 6242" "Euryarchaeota" 2.58 40.8 "Aquatic" "Mesophilic" 23.4
+"344" "Methanococcus aeolicus Nankai-3" "Euryarchaeota" 1.6 30 "Aquatic" "Mesophilic" 42
+"345" "Methanococcus maripaludis C5" "Euryarchaeota" 1.81 33 "Aquatic" "Mesophilic" NA
+"346" "Methanococcus maripaludis C6" "Euryarchaeota" 1.7 33.4 "Aquatic" "Mesophilic" NA
+"347" "Methanococcus maripaludis C7" "Euryarchaeota" 1.8 33.3 "Aquatic" "Mesophilic" NA
+"348" "Methanococcus maripaludis S2" "Euryarchaeota" 1.66 33.1 "Aquatic" "Mesophilic" 37.5
+"349" "Methanococcus vannielii SB" "Euryarchaeota" 1.7 31.3 "Aquatic" "Mesophilic" 30
+"350" "Methanocorpusculum labreanum Z" "Euryarchaeota" 1.8 50 "Aquatic" "Mesophilic" 37
+"351" "Methanoculleus marisnigri JR1" "Euryarchaeota" 2.5 62.1 "Aquatic" "Mesophilic" 23
+"352" "Methanopyrus kandleri AV19" "Euryarchaeota" 1.69 61.2 "Specialized" "Hyperthermophilic" 98
+"353" "Methanosaeta thermophila PT" "Euryarchaeota" 1.9 53.5 "" "Thermophilic" NA
+"354" "Methanosarcina acetivorans C2A" "Euryarchaeota" 5.75 42.7 "Aquatic" "Mesophilic" 37.5
+"355" "Methanosarcina barkeri str. Fusaro" "Euryarchaeota" 4.84 39.2 "Multiple" "Mesophilic" 37.5
+"356" "Methanosarcina mazei Go1" "Euryarchaeota" 4.1 41.5 "Multiple" "Mesophilic" 35
+"357" "Methanosphaera stadtmanae DSM 3091" "Euryarchaeota" 1.77 27.6 "Host-associated" "Mesophilic" 38
+"358" "Methanospirillum hungatei JF-1" "Euryarchaeota" 3.54 45.1 "Multiple" "Mesophilic" 37
+"359" "Methanothermobacter thermautotrophicus str. Delta H" "Euryarchaeota" 1.8 49.5 "Specialized" "Thermophilic" 67.5
+"360" "Methylacidiphilum infernorum V4" "Other Bacteria" 2.3 45.5 "Specialized" "Thermophilic" NA
+"361" "Methylibium petroleiphilum PM1" "Betaproteobacteria" 4.6 68.8 "Aquatic" "Mesophilic" 30
+"362" "Methylobacillus flagellatus KT" "Betaproteobacteria" 3 55.7 "Specialized" "Mesophilic" 36
+"363" "Methylobacterium extorquens PA1" "Alphaproteobacteria" 5.5 68.2 "Multiple" "Mesophilic" 27.5
+"364" "Methylobacterium populi BJ001" "Alphaproteobacteria" 5.85 69.4 "" "Mesophilic" 25
+"365" "Methylobacterium radiotolerans JCM 2831" "Alphaproteobacteria" 6.92 71 "Host-associated" "Mesophilic" NA
+"366" "Methylobacterium sp. 4-46" "Alphaproteobacteria" 7.78 71.5 "Multiple" "Mesophilic" NA
+"367" "Methylococcus capsulatus str. Bath" "Gammaproteobacteria" 3.3 63.6 "Multiple" "Thermophilic" 45
+"368" "Microcystis aeruginosa NIES-843" "Cyanobacteria" 5.8 42.3 "Aquatic" "Mesophilic" NA
+"369" "Moorella thermoacetica ATCC 39073" "Firmicutes" 2.6 55.8 "Aquatic" "Thermophilic" 58
+"370" "Mycobacterium abscessus" "Actinobacteria" 5.12 64.1 "Multiple" "Mesophilic" 37
+"371" "Mycobacterium avium 104" "Actinobacteria" 5.5 69 "Host-associated" "Mesophilic" 37
+"372" "Mycobacterium avium subsp. paratuberculosis K-10" "Actinobacteria" 4.8 69.3 "Multiple" "Mesophilic" 37
+"373" "Mycobacterium bovis AF2122/97" "Actinobacteria" 4.35 65.6 "Host-associated" "Mesophilic" 37
+"374" "Mycobacterium bovis BCG str. Pasteur 1173P2" "Actinobacteria" 4.4 65.6 "Host-associated" "Mesophilic" NA
+"375" "Mycobacterium gilvum PYR-GCK" "Actinobacteria" 5.96 67.7 "" "Mesophilic" NA
+"376" "Mycobacterium leprae TN" "Actinobacteria" 3.27 57.8 "Host-associated" "Mesophilic" 37
+"377" "Mycobacterium marinum M" "Actinobacteria" 6.62 65.7 "Multiple" "Mesophilic" 32
+"378" "Mycobacterium smegmatis str. MC2 155" "Actinobacteria" 7 67.4 "Host-associated" "Mesophilic" 37
+"379" "Mycobacterium sp. JLS" "Actinobacteria" 6 68.4 "Multiple" "Mesophilic" NA
+"380" "Mycobacterium sp. KMS" "Actinobacteria" 6.22 68.2 "Multiple" "Mesophilic" NA
+"381" "Mycobacterium sp. MCS" "Actinobacteria" 5.92 68.4 "" "Mesophilic" NA
+"382" "Mycobacterium tuberculosis CDC1551" "Actinobacteria" 4.4 65.6 "Host-associated" "Mesophilic" 37
+"383" "Mycobacterium tuberculosis F11" "Actinobacteria" 4.4 65.6 "Host-associated" "Mesophilic" 37
+"384" "Mycobacterium tuberculosis H37Ra" "Actinobacteria" 4.4 65.6 "Host-associated" "Mesophilic" 37
+"385" "Mycobacterium tuberculosis H37Rv" "Actinobacteria" 4.4 65.6 "Host-associated" "Mesophilic" 37
+"386" "Mycobacterium ulcerans Agy99" "Actinobacteria" 5.6 65.5 "Host-associated" "Mesophilic" 32
+"387" "Mycobacterium vanbaalenii PYR-1" "Actinobacteria" 6.5 67.8 "" "Mesophilic" 30.5
+"388" "Mycoplasma agalactiae PG2" "Firmicutes" 0.88 29.7 "Host-associated" "Psychrophilic" NA
+"389" "Mycoplasma arthritidis 158L3-1" "Firmicutes" 0.82 30.7 "Host-associated" "Mesophilic" 37
+"390" "Mycoplasma capricolum subsp. capricolum ATCC 27343" "Firmicutes" 1.01 23.8 "Host-associated" "Mesophilic" 37
+"391" "Mycoplasma gallisepticum R" "Firmicutes" 1 31.5 "Host-associated" "Mesophilic" 37
+"392" "Mycoplasma genitalium G37" "Firmicutes" 0.58 31.7 "Host-associated" "Mesophilic" 37
+"393" "Mycoplasma hyopneumoniae 232" "Firmicutes" 0.89 28.6 "Host-associated" "Mesophilic" 37
+"394" "Mycoplasma hyopneumoniae 7448" "Firmicutes" 0.92 28.5 "Host-associated" "Mesophilic" 37
+"395" "Mycoplasma hyopneumoniae J" "Firmicutes" 0.9 28.5 "Host-associated" "Mesophilic" 37
+"396" "Mycoplasma mobile 163K" "Firmicutes" 0.78 25 "Host-associated" "Mesophilic" 20
+"397" "Mycoplasma mycoides subsp. mycoides SC str. PG1" "Firmicutes" 1.2 24 "Host-associated" "Mesophilic" 37
+"398" "Mycoplasma penetrans HF-2" "Firmicutes" 1.36 25.7 "Host-associated" "Mesophilic" 37
+"399" "Mycoplasma pneumoniae M129" "Firmicutes" 0.82 40 "Host-associated" "Mesophilic" 37
+"400" "Mycoplasma pulmonis UAB CTIP" "Firmicutes" 0.96 26.6 "Host-associated" "Mesophilic" 37
+"401" "Mycoplasma synoviae 53" "Firmicutes" 0.8 28.5 "Host-associated" "Mesophilic" 37
+"402" "Myxococcus xanthus DK 1622" "Deltaproteobacteria" 9.1 68.9 "Terrestrial" "Mesophilic" 25
+"403" "Nanoarchaeum equitans Kin4-M" "Nanoarchaeota" 0.49 31.6 "Host-associated" "Hyperthermophilic" NA
+"404" "Natranaerobius thermophilus JW/NM-WN-LF" "Firmicutes" 3.23 36.3 "Specialized" "Thermophilic" NA
+"405" "Natronomonas pharaonis DSM 2160" "Euryarchaeota" 2.75 63.1 "Aquatic" "Mesophilic" NA
+"406" "Neisseria gonorrhoeae FA 1090" "Betaproteobacteria" 2.15 52.7 "Host-associated" "Mesophilic" 36
+"407" "Neisseria gonorrhoeae NCCP11945" "Betaproteobacteria" 2.2 52.4 "Host-associated" "Mesophilic" 36
+"408" "Neisseria meningitidis 053442" "Betaproteobacteria" 2.2 51.7 "Host-associated" "Mesophilic" NA
+"409" "Neisseria meningitidis FAM18" "Betaproteobacteria" 2.2 51.6 "Host-associated" "Mesophilic" 36
+"410" "Neisseria meningitidis MC58" "Betaproteobacteria" 2.3 51.5 "Host-associated" "Mesophilic" 36
+"411" "Neisseria meningitidis Z2491" "Betaproteobacteria" 2.2 51.8 "Host-associated" "Mesophilic" 36
+"412" "Nitratiruptor sp. SB155-2" "Epsilonproteobacteria" 1.9 39.7 "Specialized" "Thermophilic" NA
+"413" "Nitrobacter hamburgensis X14" "Alphaproteobacteria" 5.01 61.6 "Terrestrial" "Mesophilic" NA
+"414" "Nitrobacter winogradskyi Nb-255" "Alphaproteobacteria" 3.4 62 "Terrestrial" "Mesophilic" NA
+"415" "Nitrosomonas europaea ATCC 19718" "Betaproteobacteria" 2.81 50.7 "Multiple" "Mesophilic" NA
+"416" "Nitrosopumilus maritimus SCM1" "Crenarchaeota" 1.6 34.2 "Aquatic" "Mesophilic" NA
+"417" "Nitrosospira multiformis ATCC 25196" "Betaproteobacteria" 3.23 53.9 "Terrestrial" "Mesophilic" NA
+"418" "Nocardia farcinica IFM 10152" "Actinobacteria" 6.29 70.7 "Multiple" "Mesophilic" 37
+"419" "Nocardioides sp. JS614" "Actinobacteria" 5.31 71.4 "Terrestrial" "Mesophilic" 30
+"420" "Nostoc sp. PCC 7120" "Cyanobacteria" 7.21 41.3 "Multiple" "Mesophilic" NA
+"421" "Oceanobacillus iheyensis HTE831" "Firmicutes" 3.63 35.7 "Multiple" "Mesophilic" 30
+"422" "Ochrobactrum anthropi ATCC 49188" "Alphaproteobacteria" 5.22 56.1 "Terrestrial" "Mesophilic" NA
+"423" "Oenococcus oeni PSU-1" "Firmicutes" 1.8 37.9 "Multiple" "Mesophilic" 21
+"424" "Oligotropha carboxidovorans OM5" "Alphaproteobacteria" 3.7 62.4 "Multiple" "Mesophilic" NA
+"425" "Onion yellows phytoplasma OY-M" "Firmicutes" 0.86 27.7 "Host-associated" "Mesophilic" NA
+"426" "Opitutus terrae PB90-1" "Other Bacteria" 6 65.3 "Aquatic" "Mesophilic" NA
+"427" "Orientia tsutsugamushi str. Ikeda" "Alphaproteobacteria" 2 30.5 "Host-associated" "Mesophilic" NA
+"428" "Parabacteroides distasonis ATCC 8503" "Bacteroidetes/Chlorobi" 4.8 45.1 "Host-associated" "Mesophilic" NA
+"429" "Paracoccus denitrificans PD1222" "Alphaproteobacteria" 5.25 66.8 "Multiple" "Mesophilic" 27.5
+"430" "Parvibaculum lavamentivorans DS-1" "Alphaproteobacteria" 3.9 62.3 "Multiple" "Mesophilic" NA
+"431" "Pasteurella multocida subsp. multocida str. Pm70" "Gammaproteobacteria" 2.26 40.4 "Host-associated" "Mesophilic" 37
+"432" "Pectobacterium atrosepticum SCRI1043" "Gammaproteobacteria" 5.06 51 "Multiple" "Mesophilic" 28.5
+"433" "Pediococcus pentosaceus ATCC 25745" "Firmicutes" 1.8 37.4 "Multiple" "Mesophilic" 30
+"434" "Pelobacter carbinolicus DSM 2380" "Deltaproteobacteria" 3.7 55.1 "Aquatic" "Mesophilic" NA
+"435" "Pelobacter propionicus DSM 2379" "Deltaproteobacteria" 4.23 58.5 "Multiple" "Mesophilic" 30
+"436" "Pelodictyon luteolum DSM 273" "Bacteroidetes/Chlorobi" 2.36 57.3 "Multiple" "Mesophilic" 25
+"437" "Pelodictyon phaeoclathratiforme BU-1" "Bacteroidetes/Chlorobi" 3 48.1 "Multiple" "Mesophilic" 20
+"438" "Pelotomaculum thermopropionicum SI" "Firmicutes" 3 53 "Specialized" "Thermophilic" 55
+"439" "Petrotoga mobilis SJ95" "Thermotogae" 2.2 34.1 "Specialized" "Thermophilic" NA
+"440" "Phenylobacterium zucineum HLK1" "Alphaproteobacteria" 4.38 71.1 "Host-associated" "Mesophilic" 37
+"441" "Photobacterium profundum SS9" "Gammaproteobacteria" 6.38 41.7 "Multiple" "Psychrophilic" 15
+"442" "Photorhabdus luminescens subsp. laumondii TTO1" "Gammaproteobacteria" 5.69 42.8 "Host-associated" "Mesophilic" NA
+"443" "Picrophilus torridus DSM 9790" "Euryarchaeota" 1.5 36 "Specialized" "Thermophilic" 60
+"444" "Polaromonas naphthalenivorans CJ2" "Betaproteobacteria" 5.35 61.7 "Aquatic" "Mesophilic" 20
+"445" "Polaromonas sp. JS666" "Betaproteobacteria" 5.9 62 "Multiple" "Mesophilic" 20
+"446" "Polynucleobacter necessarius STIR1" "Betaproteobacteria" 1.6 45.6 "Host-associated" "Mesophilic" NA
+"447" "Polynucleobacter sp. QLW-P1DMWA-1" "Betaproteobacteria" 2.2 44.8 "Aquatic" "Mesophilic" NA
+"448" "Porphyromonas gingivalis ATCC 33277" "Bacteroidetes/Chlorobi" 2.4 48.4 "Host-associated" "Mesophilic" 37
+"449" "Porphyromonas gingivalis W83" "Bacteroidetes/Chlorobi" 2.34 48.3 "Host-associated" "Mesophilic" 37
+"450" "Prochlorococcus marinus str. AS9601" "Cyanobacteria" 1.7 31.3 "Aquatic" "Mesophilic" NA
+"451" "Prochlorococcus marinus str. MIT 9211" "Cyanobacteria" 1.7 38 "Aquatic" "Mesophilic" NA
+"452" "Prochlorococcus marinus str. MIT 9215" "Cyanobacteria" 1.7 31.1 "Aquatic" "Mesophilic" NA
+"453" "Prochlorococcus marinus str. MIT 9301" "Cyanobacteria" 1.6 31.3 "Aquatic" "Mesophilic" NA
+"454" "Prochlorococcus marinus str. MIT 9303" "Cyanobacteria" 2.7 50 "Aquatic" "Mesophilic" NA
+"455" "Prochlorococcus marinus str. MIT 9312" "Cyanobacteria" 1.71 31.2 "Aquatic" "Mesophilic" NA
+"456" "Prochlorococcus marinus str. MIT 9313" "Cyanobacteria" 2.41 50.7 "Aquatic" "Mesophilic" NA
+"457" "Prochlorococcus marinus str. MIT 9515" "Cyanobacteria" 1.7 30.8 "Aquatic" "Mesophilic" NA
+"458" "Prochlorococcus marinus str. NATL1A" "Cyanobacteria" 1.9 35 "Aquatic" "Mesophilic" NA
+"459" "Prochlorococcus marinus str. NATL2A" "Cyanobacteria" 1.8 35.1 "Aquatic" "Mesophilic" NA
+"460" "Prochlorococcus marinus subsp. marinus str. CCMP1375" "Cyanobacteria" 1.75 36.4 "Aquatic" "Mesophilic" NA
+"461" "Prochlorococcus marinus subsp. pastoris str. CCMP1986" "Cyanobacteria" 1.7 30.8 "Aquatic" "Mesophilic" NA
+"462" "Propionibacterium acnes KPA171202" "Actinobacteria" 2.56 60 "Host-associated" "Mesophilic" 37
+"463" "Prosthecochloris aestuarii DSM 271" "Bacteroidetes/Chlorobi" 2.57 50.1 "Aquatic" "Mesophilic" 30
+"464" "Proteus mirabilis HI4320" "Gammaproteobacteria" 4.14 38.9 "Host-associated" "Mesophilic" 37
+"465" "Pseudoalteromonas atlantica T6c" "Gammaproteobacteria" 5.19 44.6 "Aquatic" "Mesophilic" NA
+"466" "Pseudoalteromonas haloplanktis TAC125" "Gammaproteobacteria" 3.84 40.1 "Aquatic" "Psychrophilic" NA
+"467" "Pseudomonas aeruginosa PA7" "Gammaproteobacteria" 6.6 66.4 "Multiple" "Mesophilic" 27.5
+"468" "Pseudomonas aeruginosa PAO1" "Gammaproteobacteria" 6.3 66.6 "Multiple" "Mesophilic" 27.5
+"469" "Pseudomonas aeruginosa UCBPP-PA14" "Gammaproteobacteria" 6.54 66.3 "Multiple" "Mesophilic" 27.5
+"470" "Pseudomonas fluorescens Pf0-1" "Gammaproteobacteria" 6.4 60.5 "Multiple" "Mesophilic" NA
+"471" "Pseudomonas fluorescens Pf-5" "Gammaproteobacteria" 7.1 63.3 "Multiple" "Mesophilic" 27.5
+"472" "Pseudomonas putida F1" "Gammaproteobacteria" 6 61.9 "Multiple" "Mesophilic" NA
+"473" "Pseudomonas putida GB-1" "Gammaproteobacteria" 6.1 61.9 "Multiple" "Mesophilic" NA
+"474" "Pseudomonas putida KT2440" "Gammaproteobacteria" 6.18 61.5 "Multiple" "Mesophilic" NA
+"475" "Pseudomonas putida W619" "Gammaproteobacteria" 5.8 61.4 "Multiple" "Mesophilic" NA
+"476" "Pseudomonas stutzeri A1501" "Gammaproteobacteria" 4.6 63.9 "Host-associated" "Mesophilic" NA
+"477" "Pseudomonas syringae pv. phaseolicola 1448A" "Gammaproteobacteria" 6.08 57.9 "Multiple" "Mesophilic" NA
+"478" "Pseudomonas syringae pv. syringae B728a" "Gammaproteobacteria" 6.09 59.2 "Multiple" "Mesophilic" NA
+"479" "Pseudomonas syringae pv. tomato str. DC3000" "Gammaproteobacteria" 6.54 58.3 "Multiple" "Mesophilic" NA
+"480" "Psychrobacter arcticus 273-4" "Gammaproteobacteria" 2.65 42.8 "Specialized" "Psychrophilic" 22
+"481" "Psychrobacter cryohalolentis K5" "Gammaproteobacteria" 3.1 42.2 "Multiple" "Psychrophilic" NA
+"482" "Psychrobacter sp. PRwf-1" "Gammaproteobacteria" 3.02 44.8 "Aquatic" "Mesophilic" 20.5
+"483" "Psychromonas ingrahamii 37" "Gammaproteobacteria" 4.6 40.1 "Aquatic" "Psychrophilic" NA
+"484" "Pyrobaculum aerophilum str. IM2" "Crenarchaeota" 2.2 51.4 "Aquatic" "Hyperthermophilic" 100
+"485" "Pyrobaculum arsenaticum DSM 13514" "Crenarchaeota" 2.1 55.1 "Aquatic" "Hyperthermophilic" NA
+"486" "Pyrobaculum calidifontis JCM 11548" "Crenarchaeota" 2 57.2 "Specialized" "Hyperthermophilic" 92.5
+"487" "Pyrobaculum islandicum DSM 4184" "Crenarchaeota" 1.8 49.6 "Specialized" "Thermophilic" 100
+"488" "Pyrococcus abyssi GE5" "Euryarchaeota" 1.77 44.7 "Aquatic" "Hyperthermophilic" 103
+"489" "Pyrococcus furiosus DSM 3638" "Euryarchaeota" 1.9 40.8 "Aquatic" "Hyperthermophilic" 100
+"490" "Pyrococcus horikoshii OT3" "Euryarchaeota" 1.7 41.9 "Aquatic" "Hyperthermophilic" 98
+"491" "Ralstonia eutropha H16" "Betaproteobacteria" 7.45 66.3 "Specialized" "Mesophilic" 30
+"492" "Ralstonia eutropha JMP134" "Betaproteobacteria" 7.26 64.4 "Multiple" "Mesophilic" 30
+"493" "Ralstonia metallidurans CH34" "Betaproteobacteria" 6.91 63.5 "Specialized" "Mesophilic" 30
+"494" "Ralstonia pickettii 12J" "Betaproteobacteria" 5.28 63.6 "Multiple" "Mesophilic" NA
+"495" "Ralstonia solanacearum GMI1000" "Betaproteobacteria" 5.8 67 "Multiple" "Mesophilic" NA
+"496" "Renibacterium salmoninarum ATCC 33209" "Actinobacteria" 3.2 56.3 "Host-associated" "Mesophilic" 15
+"497" "Rhizobium etli CFN 42" "Alphaproteobacteria" 6.53 61 "Host-associated" "Mesophilic" NA
+"498" "Rhizobium etli CIAT 652" "Alphaproteobacteria" 6.44 61.3 "Host-associated" "Mesophilic" NA
+"499" "Rhizobium leguminosarum bv. trifolii WSM2304" "Alphaproteobacteria" 6.87 61.2 "Host-associated" "Mesophilic" NA
+"500" "Rhizobium leguminosarum bv. viciae 3841" "Alphaproteobacteria" 7.79 55 "Host-associated" "Mesophilic" 27.5
+"501" "Rhodobacter sphaeroides 2.4.1" "Alphaproteobacteria" 4.61 68.8 "Multiple" "Mesophilic" 30
+"502" "Rhodobacter sphaeroides ATCC 17025" "Alphaproteobacteria" 4.54 68.2 "Multiple" "Mesophilic" 30
+"503" "Rhodobacter sphaeroides ATCC 17029" "Alphaproteobacteria" 4.42 69 "Multiple" "Mesophilic" 30
+"504" "Rhodococcus sp. RHA1" "Actinobacteria" 9.67 67 "Terrestrial" "Mesophilic" 30
+"505" "Rhodoferax ferrireducens T118" "Betaproteobacteria" 4.97 59.6 "Multiple" "Mesophilic" 25
+"506" "Rhodopirellula baltica SH 1" "Planctomycetes" 7.1 55.4 "Aquatic" "Mesophilic" 28
+"507" "Rhodopseudomonas palustris BisA53" "Alphaproteobacteria" 5.51 64.4 "Multiple" "Mesophilic" 27.5
+"508" "Rhodopseudomonas palustris BisB18" "Alphaproteobacteria" 5.51 65 "Multiple" "Mesophilic" 27.5
+"509" "Rhodopseudomonas palustris BisB5" "Alphaproteobacteria" 4.89 64.8 "Multiple" "Mesophilic" 27.5
+"510" "Rhodopseudomonas palustris CGA009" "Alphaproteobacteria" 5.47 65 "Multiple" "Mesophilic" 30
+"511" "Rhodopseudomonas palustris HaA2" "Alphaproteobacteria" 5.33 66 "Multiple" "Mesophilic" 27.5
+"512" "Rhodopseudomonas palustris TIE-1" "Alphaproteobacteria" 5.7 64.9 "" "Mesophilic" 25
+"513" "Rhodospirillum centenum SW" "Alphaproteobacteria" 4.4 70.5 "Aquatic" "Mesophilic" 41
+"514" "Rhodospirillum rubrum ATCC 11170" "Alphaproteobacteria" 4.41 65.4 "Multiple" "Mesophilic" 27.5
+"515" "Rickettsia akari str. Hartford" "Alphaproteobacteria" 1.2 32.3 "Host-associated" "Mesophilic" NA
+"516" "Rickettsia canadensis str. McKiel" "Alphaproteobacteria" 1.2 31.1 "Host-associated" "Mesophilic" NA
+"517" "Rickettsia conorii str. Malish 7" "Alphaproteobacteria" 1.3 32.4 "Host-associated" "Mesophilic" NA
+"518" "Rickettsia massiliae MTU5" "Alphaproteobacteria" 1.41 32.5 "Host-associated" "Mesophilic" NA
+"519" "Rickettsia prowazekii str. Madrid E" "Alphaproteobacteria" 1.11 29 "Host-associated" "Mesophilic" NA
+"520" "Rickettsia rickettsii str. Iowa" "Alphaproteobacteria" 1.3 32.4 "Host-associated" "Mesophilic" NA
+"521" "Rickettsia rickettsii str. Sheila Smith" "Alphaproteobacteria" 1.3 32.5 "Host-associated" "Mesophilic" 37
+"522" "Rickettsia typhi str. Wilmington" "Alphaproteobacteria" 1.11 28.9 "Host-associated" "Mesophilic" NA
+"523" "Roseiflexus castenholzii DSM 13941" "Chloroflexi" 5.7 60.7 "Aquatic" "Thermophilic" 50
+"524" "Roseiflexus sp. RS-1" "Chloroflexi" 5.8 60.4 "Specialized" "Thermophilic" NA
+"525" "Roseobacter denitrificans OCh 114" "Alphaproteobacteria" 4.3 58.9 "Multiple" "Mesophilic" NA
+"526" "Rubrobacter xylanophilus DSM 9941" "Actinobacteria" 3.23 70.5 "Specialized" "Thermophilic" 60
+"527" "Saccharophagus degradans 2-40" "Gammaproteobacteria" 5.1 45.8 "Aquatic" "Mesophilic" 20.5
+"528" "Saccharopolyspora erythraea NRRL 2338" "Actinobacteria" 8.2 71.1 "Terrestrial" "Mesophilic" 25
+"529" "Salinibacter ruber DSM 13855" "Bacteroidetes/Chlorobi" 3.59 66.1 "Specialized" "Mesophilic" 42
+"530" "Salinispora arenicola CNS-205" "Actinobacteria" 5.8 69.5 "Aquatic" "Mesophilic" NA
+"531" "Salinispora tropica CNB-440" "Actinobacteria" 5.2 69.5 "Aquatic" "Mesophilic" 28
+"532" "Salmonella enterica subsp. arizonae serovar 62:z4,z23:--" "Gammaproteobacteria" 4.6 51.4 "Host-associated" "Mesophilic" NA
+"533" "Salmonella enterica subsp. enterica serovar Agona str. SL483" "Gammaproteobacteria" 4.84 52 "Multiple" "Mesophilic" NA
+"534" "Salmonella enterica subsp. enterica serovar Choleraesuis str. SC-B67" "Gammaproteobacteria" 4.99 52.1 "Host-associated" "Mesophilic" 37
+"535" "Salmonella enterica subsp. enterica serovar Dublin str. CT_02021853" "Gammaproteobacteria" 4.88 52.1 "Multiple" "Mesophilic" NA
+"536" "Salmonella enterica subsp. enterica serovar Enteritidis str. P125109" "Gammaproteobacteria" 4.7 52.2 "Specialized" "Mesophilic" NA
+"537" "Salmonella enterica subsp. enterica serovar Gallinarum str. 287/91" "Gammaproteobacteria" 4.7 52.2 "Multiple" "Mesophilic" NA
+"538" "Salmonella enterica subsp. enterica serovar Heidelberg str. SL476" "Gammaproteobacteria" 4.99 52.1 "Multiple" "Mesophilic" NA
+"539" "Salmonella enterica subsp. enterica serovar Newport str. SL254" "Gammaproteobacteria" 4.98 52.2 "Multiple" "Mesophilic" NA
+"540" "Salmonella enterica subsp. enterica serovar Paratyphi A str. AKU_12601" "Gammaproteobacteria" 4.6 52.2 "Multiple" "Mesophilic" NA
+"541" "Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150" "Gammaproteobacteria" 4.6 52.2 "Host-associated" "Mesophilic" 37
+"542" "Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7" "Gammaproteobacteria" 4.9 52.1 "Host-associated" "Mesophilic" 37
+"543" "Salmonella enterica subsp. enterica serovar Schwarzengrund str. CVM19633" "Gammaproteobacteria" 4.81 52.2 "Multiple" "Mesophilic" NA
+"544" "Salmonella enterica subsp. enterica serovar Typhi str. CT18" "Gammaproteobacteria" 5.13 51.9 "Host-associated" "Mesophilic" 37
+"545" "Salmonella enterica subsp. enterica serovar Typhi str. Ty2" "Gammaproteobacteria" 4.8 52.1 "Host-associated" "Mesophilic" 37
+"546" "Salmonella typhimurium LT2" "Gammaproteobacteria" 4.99 52.2 "Host-associated" "Mesophilic" 37
+"547" "Serratia proteamaculans 568" "Gammaproteobacteria" 5.45 55 "Multiple" "Mesophilic" NA
+"548" "Shewanella amazonensis SB2B" "Gammaproteobacteria" 4.3 53.6 "Multiple" "Mesophilic" 37
+"549" "Shewanella baltica OS155" "Gammaproteobacteria" 5.32 46.2 "Aquatic" "Mesophilic" NA
+"550" "Shewanella baltica OS185" "Gammaproteobacteria" 5.28 46.3 "Aquatic" "Mesophilic" NA
+"551" "Shewanella baltica OS195" "Gammaproteobacteria" 5.5 46.2 "Aquatic" "Mesophilic" NA
+"552" "Shewanella denitrificans OS217" "Gammaproteobacteria" 4.55 45.1 "Aquatic" "Mesophilic" 22.5
+"553" "Shewanella frigidimarina NCIMB 400" "Gammaproteobacteria" 4.85 41.6 "Multiple" "Mesophilic" 21
+"554" "Shewanella halifaxensis HAW-EB4" "Gammaproteobacteria" 5.2 44.6 "Aquatic" "Psychrophilic" 10
+"555" "Shewanella loihica PV-4" "Gammaproteobacteria" 4.6 53.7 "Multiple" "Mesophilic" NA
+"556" "Shewanella oneidensis MR-1" "Gammaproteobacteria" 5.16 45.9 "Multiple" "Mesophilic" NA
+"557" "Shewanella pealeana ATCC 700345" "Gammaproteobacteria" 5.2 44.7 "" "Mesophilic" NA
+"558" "Shewanella piezotolerans WP3" "Gammaproteobacteria" 5.4 43.3 "Specialized" "Mesophilic" 17.5
+"559" "Shewanella putrefaciens CN-32" "Gammaproteobacteria" 4.7 44.5 "Multiple" "Mesophilic" NA
+"560" "Shewanella sediminis HAW-EB3" "Gammaproteobacteria" 5.5 46.1 "Aquatic" "Psychrophilic" 10
+"561" "Shewanella sp. ANA-3" "Gammaproteobacteria" 5.28 47.9 "Multiple" "Mesophilic" NA
+"562" "Shewanella sp. MR-4" "Gammaproteobacteria" 4.71 47.9 "Multiple" "Mesophilic" NA
+"563" "Shewanella sp. MR-7" "Gammaproteobacteria" 4.8 47.9 "Aquatic" "Mesophilic" NA
+"564" "Shewanella sp. W3-18-1" "Gammaproteobacteria" 4.7 44.6 "Multiple" "Mesophilic" NA
+"565" "Shewanella woodyi ATCC 51908" "Gammaproteobacteria" 5.9 43.7 "Multiple" "Mesophilic" 25
+"566" "Shigella boydii CDC 3083-94" "Gammaproteobacteria" 4.86 51 "Host-associated" "Mesophilic" 37
+"567" "Shigella boydii Sb227" "Gammaproteobacteria" 4.63 51.1 "Host-associated" "Mesophilic" 37
+"568" "Shigella dysenteriae Sd197" "Gammaproteobacteria" 4.59 51 "Host-associated" "Mesophilic" 37
+"569" "Shigella flexneri 2a str. 2457T" "Gammaproteobacteria" 4.6 50.9 "Host-associated" "Mesophilic" 37
+"570" "Shigella flexneri 2a str. 301" "Gammaproteobacteria" 4.82 50.7 "Host-associated" "Mesophilic" 37
+"571" "Shigella flexneri 5 str. 8401" "Gammaproteobacteria" 4.6 50.9 "Host-associated" "Mesophilic" 37
+"572" "Shigella sonnei Ss046" "Gammaproteobacteria" 5.03 50.8 "Host-associated" "Mesophilic" 37
+"573" "Silicibacter pomeroyi DSS-3" "Alphaproteobacteria" 4.6 64.1 "Aquatic" "Mesophilic" NA
+"574" "Sinorhizobium medicae WSM419" "Alphaproteobacteria" 6.82 61.1 "Multiple" "Mesophilic" 28
+"575" "Sinorhizobium meliloti 1021" "Alphaproteobacteria" 6.8 62.2 "Multiple" "Mesophilic" 27.5
+"576" "Sodalis glossinidius str. morsitans" "Gammaproteobacteria" 4.29 54.5 "Host-associated" "Mesophilic" 25
+"577" "Solibacter usitatus Ellin6076" "Acidobacteria" 10 61.9 "Terrestrial" "Mesophilic" 30
+"578" "Sorangium cellulosum So ce 56" "Deltaproteobacteria" 13.03 71.4 "Terrestrial" "Mesophilic" NA
+"579" "Sphingomonas wittichii RW1" "Alphaproteobacteria" 5.93 67.9 "Aquatic" "Mesophilic" NA
+"580" "Staphylococcus aureus RF122" "Firmicutes" 2.7 32.8 "Host-associated" "Mesophilic" 33.5
+"581" "Staphylococcus aureus subsp. aureus COL" "Firmicutes" 2.81 32.8 "Host-associated" "Mesophilic" 33.5
+"582" "Staphylococcus aureus subsp. aureus JH1" "Firmicutes" 2.93 32.9 "Host-associated" "Mesophilic" 33.5
+"583" "Staphylococcus aureus subsp. aureus JH9" "Firmicutes" 2.93 32.9 "Host-associated" "Mesophilic" 33.5
+"584" "Staphylococcus aureus subsp. aureus MRSA252" "Firmicutes" 2.9 32.8 "Host-associated" "Mesophilic" 33.5
+"585" "Staphylococcus aureus subsp. aureus MSSA476" "Firmicutes" 2.82 32.8 "Host-associated" "Mesophilic" 33.5
+"586" "Staphylococcus aureus subsp. aureus Mu3" "Firmicutes" 2.9 32.9 "Host-associated" "Mesophilic" 20
+"587" "Staphylococcus aureus subsp. aureus Mu50" "Firmicutes" 2.93 32.8 "Host-associated" "Mesophilic" 33.5
+"588" "Staphylococcus aureus subsp. aureus MW2" "Firmicutes" 2.8 32.8 "Host-associated" "Mesophilic" 33.5
+"589" "Staphylococcus aureus subsp. aureus N315" "Firmicutes" 2.82 32.8 "Host-associated" "Mesophilic" 33.5
+"590" "Staphylococcus aureus subsp. aureus NCTC 8325" "Firmicutes" 2.8 32.9 "Host-associated" "Mesophilic" 33.5
+"591" "Staphylococcus aureus subsp. aureus str. Newman" "Firmicutes" 2.9 32.9 "Host-associated" "Mesophilic" 33.5
+"592" "Staphylococcus aureus subsp. aureus USA300" "Firmicutes" 2.94 32.7 "Host-associated" "Mesophilic" 37
+"593" "Staphylococcus aureus subsp. aureus USA300_TCH1516" "Firmicutes" 2.93 32.7 "Host-associated" "Mesophilic" 37
+"594" "Staphylococcus epidermidis ATCC 12228" "Firmicutes" 2.56 32 "Host-associated" "Mesophilic" 33.5
+"595" "Staphylococcus epidermidis RP62A" "Firmicutes" 2.64 32.1 "Host-associated" "Mesophilic" 33.5
+"596" "Staphylococcus haemolyticus JCSC1435" "Firmicutes" 2.7 32.8 "Host-associated" "Mesophilic" 33.5
+"597" "Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305" "Firmicutes" 2.56 33.2 "Host-associated" "Mesophilic" NA
+"598" "Staphylothermus marinus F1" "Crenarchaeota" 1.6 35.7 "Specialized" "Hyperthermophilic" 92
+"599" "Stenotrophomonas maltophilia K279a" "Gammaproteobacteria" 4.85 66.3 "Multiple" "Mesophilic" NA
+"600" "Stenotrophomonas maltophilia R551-3" "Gammaproteobacteria" 4.6 66.3 "Multiple" "Mesophilic" NA
+"601" "Streptococcus agalactiae 2603V/R" "Firmicutes" 2.2 35.6 "Host-associated" "Mesophilic" 37
+"602" "Streptococcus agalactiae A909" "Firmicutes" 2.13 35.6 "Host-associated" "Mesophilic" 37
+"603" "Streptococcus agalactiae NEM316" "Firmicutes" 2.2 35.6 "Host-associated" "Mesophilic" 37
+"604" "Streptococcus equi subsp. zooepidemicus MGCS10565" "Firmicutes" 2 41.8 "Host-associated" "Mesophilic" NA
+"605" "Streptococcus gordonii str. Challis substr. CH1" "Firmicutes" 2.2 40.5 "Host-associated" "Mesophilic" 37
+"606" "Streptococcus mutans UA159" "Firmicutes" 2.03 36.8 "Host-associated" "Mesophilic" 37
+"607" "Streptococcus pneumoniae CGSP14" "Firmicutes" 2.2 39.5 "Multiple" "Mesophilic" NA
+"608" "Streptococcus pneumoniae D39" "Firmicutes" 2 39.7 "Multiple" "Mesophilic" 32.5
+"609" "Streptococcus pneumoniae G54" "Firmicutes" 2.1 39.6 "Host-associated" "Mesophilic" NA
+"610" "Streptococcus pneumoniae Hungary19A-6" "Firmicutes" 2.2 39.6 "Multiple" "Mesophilic" NA
+"611" "Streptococcus pneumoniae R6" "Firmicutes" 2.04 39.7 "Multiple" "Mesophilic" 32.5
+"612" "Streptococcus pneumoniae TIGR4" "Firmicutes" 2.2 39.7 "Multiple" "Mesophilic" 32.5
+"613" "Streptococcus pyogenes M1 GAS" "Firmicutes" 1.9 38.5 "Host-associated" "Mesophilic" 32.5
+"614" "Streptococcus pyogenes MGAS10270" "Firmicutes" 1.9 38.4 "Host-associated" "Mesophilic" NA
+"615" "Streptococcus pyogenes MGAS10394" "Firmicutes" 1.9 38.7 "Host-associated" "Mesophilic" 35
+"616" "Streptococcus pyogenes MGAS10750" "Firmicutes" 1.94 38.3 "Host-associated" "Mesophilic" NA
+"617" "Streptococcus pyogenes MGAS2096" "Firmicutes" 1.86 38.7 "Host-associated" "Mesophilic" NA
+"618" "Streptococcus pyogenes MGAS315" "Firmicutes" 1.9 38.6 "Host-associated" "Mesophilic" 32.5
+"619" "Streptococcus pyogenes MGAS5005" "Firmicutes" 1.84 38.5 "Host-associated" "Mesophilic" 35
+"620" "Streptococcus pyogenes MGAS6180" "Firmicutes" 1.9 38.4 "Host-associated" "Mesophilic" 35
+"621" "Streptococcus pyogenes MGAS8232" "Firmicutes" 1.9 38.5 "Host-associated" "Mesophilic" 32.5
+"622" "Streptococcus pyogenes MGAS9429" "Firmicutes" 1.84 38.5 "Host-associated" "Mesophilic" NA
+"623" "Streptococcus pyogenes NZ131" "Firmicutes" 1.8 38.6 "Host-associated" "Mesophilic" NA
+"624" "Streptococcus pyogenes SSI-1" "Firmicutes" 1.9 38.6 "Host-associated" "Mesophilic" 32.5
+"625" "Streptococcus pyogenes str. Manfredo" "Firmicutes" 1.8 38.6 "Host-associated" "Mesophilic" 32.5
+"626" "Streptococcus sanguinis SK36" "Firmicutes" 2.4 43.4 "Host-associated" "Mesophilic" NA
+"627" "Streptococcus suis 05ZYH33" "Firmicutes" 2.1 41.1 "Multiple" "Mesophilic" 37
+"628" "Streptococcus suis 98HAH33" "Firmicutes" 2.1 41.1 "Specialized" "Mesophilic" 37
+"629" "Streptococcus thermophilus CNRZ1066" "Firmicutes" 1.8 39.1 "Multiple" "Thermophilic" 45
+"630" "Streptococcus thermophilus LMD-9" "Firmicutes" 1.91 39.1 "Multiple" "Mesophilic" 37
+"631" "Streptococcus thermophilus LMG 18311" "Firmicutes" 1.8 39.1 "Multiple" "Thermophilic" 45
+"632" "Streptomyces avermitilis MA-4680" "Actinobacteria" 9.09 70.7 "Multiple" "Mesophilic" 25
+"633" "Streptomyces coelicolor A3(2)" "Actinobacteria" 9.09 72 "Multiple" "Mesophilic" 30
+"634" "Streptomyces griseus subsp. griseus NBRC 13350" "Actinobacteria" 8.5 72.2 "Multiple" "Mesophilic" 30
+"635" "Sulfolobus acidocaldarius DSM 639" "Crenarchaeota" 2.23 36.7 "Specialized" "Thermophilic" 72.5
+"636" "Sulfolobus solfataricus P2" "Crenarchaeota" 3 35.8 "Specialized" "Hyperthermophilic" 85
+"637" "Sulfolobus tokodaii str. 7" "Crenarchaeota" 2.7 32.8 "Specialized" "Hyperthermophilic" 80
+"638" "Sulfurihydrogenibium sp. YO3AOP1" "Aquificae" 1.8 32 "Specialized" "Thermophilic" NA
+"639" "Sulfurimonas denitrificans DSM 1251" "Epsilonproteobacteria" 2.2 34.5 "" "Mesophilic" 22.5
+"640" "Sulfurovum sp. NBC37-1" "Epsilonproteobacteria" 2.6 43.9 "Specialized" "Mesophilic" NA
+"641" "Symbiobacterium thermophilum IAM 14863" "Firmicutes" 3.6 68.7 "Terrestrial" "Thermophilic" 60
+"642" "Synechococcus elongatus PCC 6301" "Cyanobacteria" 2.7 55.5 "Aquatic" "Mesophilic" NA
+"643" "Synechococcus elongatus PCC 7942" "Cyanobacteria" 2.75 55.4 "Aquatic" "Mesophilic" NA
+"644" "Synechococcus sp. CC9311" "Cyanobacteria" 2.61 52.4 "Aquatic" "Mesophilic" NA
+"645" "Synechococcus sp. CC9605" "Cyanobacteria" 2.51 59.2 "Aquatic" "Mesophilic" NA
+"646" "Synechococcus sp. CC9902" "Cyanobacteria" 2.2 54.2 "Aquatic" "Mesophilic" NA
+"647" "Synechococcus sp. JA-2-3Ba(2-13)" "Cyanobacteria" 3.05 58.5 "Specialized" "Thermophilic" NA
+"648" "Synechococcus sp. JA-3-3Ab" "Cyanobacteria" 2.93 60.2 "Specialized" "Thermophilic" NA
+"649" "Synechococcus sp. PCC 7002" "Cyanobacteria" 3.4 49.2 "Aquatic" "Mesophilic" 38
+"650" "Synechococcus sp. RCC307" "Cyanobacteria" 2.2 60.8 "Aquatic" "Mesophilic" NA
+"651" "Synechococcus sp. WH 7803" "Cyanobacteria" 2.4 60.2 "Aquatic" "Mesophilic" NA
+"652" "Synechococcus sp. WH 8102" "Cyanobacteria" 2.43 59.4 "Aquatic" "Mesophilic" NA
+"653" "Synechocystis sp. PCC 6803" "Cyanobacteria" 3.94 47.4 "Aquatic" "Mesophilic" NA
+"654" "Syntrophobacter fumaroxidans MPOB" "Deltaproteobacteria" 5 59.9 "Aquatic" "Mesophilic" 37
+"655" "Syntrophus aciditrophicus SB" "Deltaproteobacteria" 3.2 51.5 "Multiple" "Mesophilic" 35
+"656" "Thermoanaerobacter pseudethanolicus ATCC 33223" "Firmicutes" 2.4 34.5 "Aquatic" "Thermophilic" NA
+"657" "Thermoanaerobacter sp. X514" "Firmicutes" 2.5 34.5 "" "Thermophilic" 60
+"658" "Thermoanaerobacter tengcongensis MB4" "Firmicutes" 2.69 37.6 "Specialized" "Hyperthermophilic" 75
+"659" "Thermobifida fusca YX" "Actinobacteria" 3.6 67.5 "Multiple" "Thermophilic" 52.5
+"660" "Thermococcus kodakarensis KOD1" "Euryarchaeota" 2.09 52 "Specialized" "Hyperthermophilic" 85
+"661" "Thermococcus onnurineus NA1" "Euryarchaeota" 1.8 51.3 "Terrestrial" "Hyperthermophilic" 80
+"662" "Thermodesulfovibrio yellowstonii DSM 11347" "Other Bacteria" 2 34.1 "Specialized" "Thermophilic" 65
+"663" "Thermofilum pendens Hrk 5" "Crenarchaeota" 1.83 57.6 "Specialized" "Hyperthermophilic" 88
+"664" "Thermoplasma acidophilum DSM 1728" "Euryarchaeota" 1.6 46 "Specialized" "Thermophilic" 59
+"665" "Thermoplasma volcanium GSS1" "Euryarchaeota" 1.58 39.9 "Specialized" "Thermophilic" 60
+"666" "Thermoproteus neutrophilus V24Sta" "Crenarchaeota" 1.8 59.9 "Specialized" "Hyperthermophilic" 85
+"667" "Thermosipho melanesiensis BI429" "Thermotogae" 1.9 31.4 "" "Thermophilic" 70
+"668" "Thermosynechococcus elongatus BP-1" "Cyanobacteria" 2.59 53.9 "Specialized" "Thermophilic" 55
+"669" "Thermotoga lettingae TMO" "Thermotogae" 2.1 38.7 "Specialized" "Hyperthermophilic" 65
+"670" "Thermotoga maritima MSB8" "Thermotogae" 1.86 46.2 "Specialized" "Hyperthermophilic" 80
+"671" "Thermotoga petrophila RKU-1" "Thermotogae" 1.8 46.1 "Aquatic" "Hyperthermophilic" 80
+"672" "Thermotoga sp. RQ2" "Thermotogae" 1.9 46.2 "Specialized" "Hyperthermophilic" 79
+"673" "Thermus thermophilus HB27" "Deinococcus-Thermus" 2.13 69.4 "Specialized" "Thermophilic" 68
+"674" "Thermus thermophilus HB8" "Deinococcus-Thermus" 2.07 69.5 "Specialized" "Thermophilic" NA
+"675" "Thiobacillus denitrificans ATCC 25259" "Betaproteobacteria" 2.91 66.1 "Multiple" "Mesophilic" 30
+"676" "Thiomicrospira crunogena XCL-2" "Gammaproteobacteria" 2.4 43.1 "Aquatic" "Mesophilic" 30
+"677" "Treponema denticola ATCC 35405" "Spirochaetes" 2.8 37.9 "Host-associated" "Mesophilic" 36
+"678" "Treponema pallidum subsp. pallidum SS14" "Spirochaetes" 1.1 52.8 "Host-associated" "Mesophilic" NA
+"679" "Treponema pallidum subsp. pallidum str. Nichols" "Spirochaetes" 1.14 52.8 "Host-associated" "Mesophilic" NA
+"680" "Tropheryma whipplei str. Twist" "Actinobacteria" 0.93 46.3 "Host-associated" "Mesophilic" 37
+"681" "Tropheryma whipplei TW08/27" "Actinobacteria" 0.93 46.3 "Host-associated" "Mesophilic" 37
+"682" "uncultured methanogenic archaeon RC-I" "Euryarchaeota" 3.2 54.6 "Host-associated" "Mesophilic" NA
+"683" "Ureaplasma parvum serovar 3 str. ATCC 27815" "Firmicutes" 0.75 25.5 "Host-associated" "Mesophilic" NA
+"684" "Ureaplasma parvum serovar 3 str. ATCC 700970" "Firmicutes" 0.75 25.5 "Host-associated" "Mesophilic" NA
+"685" "Ureaplasma urealyticum serovar 10 str. ATCC 33699" "Other Bacteria" 0.87 25.8 "Host-associated" "Mesophilic" 37
+"686" "Verminephrobacter eiseniae EF01-2" "Betaproteobacteria" 5.63 65.2 "Host-associated" "Mesophilic" NA
+"687" "Vibrio cholerae O1 biovar El Tor str. N16961" "Gammaproteobacteria" 4.03 47.5 "Aquatic" "Mesophilic" 25
+"688" "Vibrio cholerae O395" "Gammaproteobacteria" 4.1 47.5 "Aquatic" "Mesophilic" 25
+"689" "Vibrio fischeri ES114" "Gammaproteobacteria" 4.25 38.3 "Multiple" "Mesophilic" 24
+"690" "Vibrio fischeri MJ11" "Gammaproteobacteria" 4.48 38.2 "Multiple" "Mesophilic" 24
+"691" "Vibrio harveyi ATCC BAA-1116" "Gammaproteobacteria" 6.09 45.4 "Aquatic" "Mesophilic" 25
+"692" "Vibrio parahaemolyticus RIMD 2210633" "Gammaproteobacteria" 5.17 45.4 "Aquatic" "Mesophilic" 25
+"693" "Vibrio vulnificus CMCP6" "Gammaproteobacteria" 5.1 46.7 "Aquatic" "Mesophilic" 25
+"694" "Vibrio vulnificus YJ016" "Gammaproteobacteria" 5.26 46.7 "Aquatic" "Mesophilic" 25
+"695" "Wigglesworthia glossinidia endosymbiont of Glossina brevipalpis" "Gammaproteobacteria" 0.7 22.5 "Host-associated" "Mesophilic" NA
+"696" "Wolbachia endosymbiont of Drosophila melanogaster" "Alphaproteobacteria" 1.27 35.2 "Host-associated" "Mesophilic" NA
+"697" "Wolbachia endosymbiont strain TRS of Brugia malayi" "Alphaproteobacteria" 1.08 34.2 "Host-associated" "Mesophilic" NA
+"698" "Wolbachia pipientis" "Alphaproteobacteria" 1.48 34.2 "Host-associated" "Mesophilic" NA
+"699" "Wolinella succinogenes DSM 1740" "Epsilonproteobacteria" 2.1 48.5 "Host-associated" "Mesophilic" NA
+"700" "Xanthobacter autotrophicus Py2" "Alphaproteobacteria" 5.62 67.3 "Multiple" "Mesophilic" NA
+"701" "Xanthomonas axonopodis pv. citri str. 306" "Gammaproteobacteria" 5.27 64.7 "Host-associated" "Mesophilic" 27.5
+"702" "Xanthomonas campestris pv. campestris str. 8004" "Gammaproteobacteria" 5.15 65 "Host-associated" "Mesophilic" 27.5
+"703" "Xanthomonas campestris pv. campestris str. ATCC 33913" "Gammaproteobacteria" 5.08 65.1 "Host-associated" "Mesophilic" 27.5
+"704" "Xanthomonas campestris pv. vesicatoria str. 85-10" "Gammaproteobacteria" 5.42 64.6 "Host-associated" "Mesophilic" 27.5
+"705" "Xanthomonas oryzae pv. oryzae KACC10331" "Gammaproteobacteria" 4.9 63.7 "Host-associated" "Mesophilic" NA
+"706" "Xanthomonas oryzae pv. oryzae MAFF 311018" "Gammaproteobacteria" 4.9 63.7 "Host-associated" "Mesophilic" NA
+"707" "Xanthomonas oryzae pv. oryzae PXO99A" "Gammaproteobacteria" 5.2 63.6 "Host-associated" "Mesophilic" NA
+"708" "Xylella fastidiosa 9a5c" "Gammaproteobacteria" 2.73 52.6 "Host-associated" "Mesophilic" 27
+"709" "Xylella fastidiosa M12" "Gammaproteobacteria" 2.5 51.9 "Host-associated" "Mesophilic" NA
+"710" "Xylella fastidiosa M23" "Gammaproteobacteria" 2.54 51.7 "Host-associated" "Mesophilic" NA
+"711" "Xylella fastidiosa Temecula1" "Gammaproteobacteria" 2.52 51.8 "Host-associated" "Mesophilic" 27
+"712" "Yersinia enterocolitica subsp. enterocolitica 8081" "Gammaproteobacteria" 4.67 47.2 "Multiple" "Mesophilic" 29
+"713" "Yersinia pestis Angola" "Gammaproteobacteria" 4.68 47.6 "Multiple" "Mesophilic" NA
+"714" "Yersinia pestis Antiqua" "Gammaproteobacteria" 4.88 47.7 "Multiple" "Mesophilic" NA
+"715" "Yersinia pestis biovar Microtus str. 91001" "Gammaproteobacteria" 4.81 47.7 "Multiple" "Mesophilic" 29
+"716" "Yersinia pestis CO92" "Gammaproteobacteria" 4.88 47.6 "Multiple" "Mesophilic" 29
+"717" "Yersinia pestis KIM" "Gammaproteobacteria" 4.7 47.7 "Multiple" "Mesophilic" 29
+"718" "Yersinia pestis Nepal516" "Gammaproteobacteria" 4.61 47.6 "Multiple" "Mesophilic" NA
+"719" "Yersinia pestis Pestoides F" "Gammaproteobacteria" 4.71 47.7 "Multiple" "Mesophilic" NA
+"720" "Yersinia pseudotuberculosis IP 31758" "Gammaproteobacteria" 4.91 47.2 "Multiple" "Mesophilic" NA
+"721" "Yersinia pseudotuberculosis IP 32953" "Gammaproteobacteria" 4.8 47.6 "Multiple" "Mesophilic" 29
+"722" "Yersinia pseudotuberculosis PB1/+" "Gammaproteobacteria" 4.77 47.5 "Multiple" "Mesophilic" NA
+"723" "Yersinia pseudotuberculosis YPIII" "Gammaproteobacteria" 4.7 47.5 "Multiple" "Mesophilic" NA
+"724" "Zymomonas mobilis subsp. mobilis ZM4" "Alphaproteobacteria" 2.06 46.3 "Multiple" "Mesophilic" 27.5

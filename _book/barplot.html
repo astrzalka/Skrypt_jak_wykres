@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów - 2&nbsp; Histogram</title>
+<title>Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów - 4&nbsp; Wykres słupkowy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./boxplot.html" rel="next">
-<link href="./wczytanie_danych.html" rel="prev">
+<link href="./scatterplot.html" rel="next">
+<link href="./boxplot.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -108,7 +108,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./histogram.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Histogram</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./barplot.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Wykres słupkowy</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./histogram.html" class="sidebar-item-text sidebar-link active">
+  <a href="./histogram.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Histogram</span></span></a>
   </div>
 </li>
@@ -162,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./barplot.html" class="sidebar-item-text sidebar-link">
+  <a href="./barplot.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Wykres słupkowy</span></span></a>
   </div>
 </li>
@@ -188,12 +188,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#jak-narysować-histogram-w-r" id="toc-jak-narysować-histogram-w-r" class="nav-link active" data-scroll-target="#jak-narysować-histogram-w-r"><span class="header-section-number">2.1</span> Jak narysować histogram w R?</a>
+  <li><a href="#jak-narysować-wykres-słupkowy-w-r" id="toc-jak-narysować-wykres-słupkowy-w-r" class="nav-link active" data-scroll-target="#jak-narysować-wykres-słupkowy-w-r"><span class="header-section-number">4.1</span> Jak narysować wykres słupkowy w R?</a>
   <ul class="collapse">
-  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r"><span class="header-section-number">2.1.1</span> Base R</a></li>
-  <li><a href="#ggplot2" id="toc-ggplot2" class="nav-link" data-scroll-target="#ggplot2"><span class="header-section-number">2.1.2</span> ggplot2</a></li>
+  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r"><span class="header-section-number">4.1.1</span> Base R</a></li>
+  <li><a href="#ggplot2" id="toc-ggplot2" class="nav-link" data-scroll-target="#ggplot2"><span class="header-section-number">4.1.2</span> ggplot2</a></li>
   </ul></li>
-  <li><a href="#jak-narysować-histogram-w-excel" id="toc-jak-narysować-histogram-w-excel" class="nav-link" data-scroll-target="#jak-narysować-histogram-w-excel"><span class="header-section-number">2.2</span> Jak narysować histogram w Excel?</a></li>
+  <li><a href="#jak-narysować-wykres-słupkowy-w-excel" id="toc-jak-narysować-wykres-słupkowy-w-excel" class="nav-link" data-scroll-target="#jak-narysować-wykres-słupkowy-w-excel"><span class="header-section-number">4.2</span> Jak narysować wykres słupkowy w Excel?</a></li>
   </ul>
 </nav>
     </div>
@@ -202,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Histogram</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Wykres słupkowy</span></h1>
 </div>
 
 
@@ -217,57 +217,94 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="jak-narysować-histogram-w-r" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="jak-narysować-histogram-w-r"><span class="header-section-number">2.1</span> Jak narysować histogram w R?</h2>
+<p>Wykres słupkowy jest najczęściej stosowanym typem wykresu w publikacjach naukowych. Umożliwia wizualną reprezentację danych jakościowych. Przy danych ilościowych warto rozważyć inny sporób prezentacji danych np. <a href="./boxplot.html">wykres pudełkowy</a>. Jak dodać do wykresu słupkowego zakres błędu sprawdź tutaj.</p>
+<section id="jak-narysować-wykres-słupkowy-w-r" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="jak-narysować-wykres-słupkowy-w-r"><span class="header-section-number">4.1</span> Jak narysować wykres słupkowy w R?</h2>
 <p>Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w <a href="./wczytanie_danych.html">Jak wczytać dane do R</a></p>
-<section id="base-r" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">2.1.1</span> Base R</h3>
-<p>Do narysowania histogramu wykorzystaj funkcję <code>hist</code>. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu <code>breaks</code> do podania oczekiwanej liczby przedziałów histogramu.</p>
+<section id="base-r" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">4.1.1</span> Base R</h3>
+<p>Do przygotowanie wykresu słupkowego w R można wykorzystać dane pokazujące jak często występowała dana kategoria np.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie danych</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data_hist <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">'data/data_test.txt'</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data_hist<span class="sc">$</span>x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="histogram_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie danych csv</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>animal <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'data/animal.csv'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># head pokazuje pierwsze 6 wierszy z tabeli</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(animal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  X Impound.No Intake.Date Intake.Type Animal.Type Neutered.Status    Sex
+1 1 K12-000031      1/1/12       Stray         Dog          Spayed Female
+2 2 K12-000037      1/1/12       Stray         Dog          Intact Female
+3 3 K12-000108      1/1/12       Stray         Dog          Intact   Male
+4 4 K12-000125      1/1/12       Stray         Dog        Neutered   Male
+5 5 K12-000157      1/1/12       Stray         Dog        Neutered   Male
+6 6 K12-000286      1/1/12       Stray         Dog        Neutered   Male
+  Age.Intake       Condition                         Breed Aggressive
+1         10 Injured or Sick              Chihuahua Sh Mix          N
+2          3          Normal               Rat Terrier Mix          N
+3          2          Normal                  Pit Bull Mix          N
+4          0          Normal Labrador Retr &amp; Border Collie          N
+5          3 Injured or Sick                Labrador Retr           N
+6          5          Normal               Yorkshire Terr           N
+  Independent Intelligent Loyal Social Good.with.Kids Max.Life.Expectancy
+1           N           Y     N      N              N                  18
+2           N           Y     N      Y              Y                  14
+3           N           N     Y      N              Y                  14
+4           Y           Y     Y      Y              Y                  12
+5           Y           Y     Y      Y              Y                  12
+6           N           N     Y      N              Y                  15
+  Max.Weight Dog.Group         Color Weight           Lab.Test Outcome.Date
+1          6       Toy   Tan &amp; White    3.3 Heartworm Negative       1/7/12
+2         25   Terrier White &amp; Brown    7.5        No Lab Test       1/3/12
+3         90   Terrier  Blue &amp; White   74.0 Heartworm Negative      1/13/12
+4         79  Sporting White &amp; Black   22.0        No Lab Test       1/8/12
+5         79  Sporting Black &amp; White   54.0 Heartworm Negative       4/4/12
+6          7   Terrier  Silver &amp; Tan    4.8 Heartworm Negative      1/10/12
+       Outcome.Type Days.Shelter
+1          Adoption            6
+2   Return to Owner            2
+3 Humane Euthanasia           12
+4          Adoption            7
+5          Adoption           94
+6   Return to Owner            9</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram z wybraną liczbą przedziałów</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data_hist<span class="sc">$</span>x, <span class="at">breaks =</span> <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="histogram_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid" width="672"></p>
 </div>
-</div>
-</section>
-<section id="ggplot2" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">2.1.2</span> ggplot2</h3>
-<p>Do narysowania histogramu wykorzystaj funkcje <code>ggplot</code> i <code>geom_histogram</code></p>
-<p>W funkcji <code>ggplot</code> podaj nazwę tabeli i nazwę kolumny z danymi: <code>ggplot(nazwa_tabeli, aes(x = nazwa_kolumny))</code>. Potem dodaj do <code>geom_histogram()</code>. Możesz dodatkowo ustawić szerokość przedziału przy pomocy argumentu <code>binwidth</code></p>
+<p>W powyższych danych można przygotować wykres słupkowy pokazujący liczebność kategorii w kolumnie Intake.Type lub Animal.Type</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytaj bibliotekę ggplot2</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_hist, <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span> </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># funkcja table zlicza częstość występowania każdej grupy</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>animal_type_tabela <span class="ot">&lt;-</span> <span class="fu">table</span>(animal<span class="sc">$</span>Animal.Type)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># rysowanie wykresu</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(animal_type_tabela)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="histogram_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+<p><img src="barplot_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram z wybraną szerokością przedziału</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_hist, <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span> </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.1</span>)<span class="sc">+</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="co"># białe tło</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ggplot2" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">4.1.2</span> ggplot2</h3>
+<p>Do narysowania histogramu wykorzystaj funkcje <code>ggplot</code> i <code>geom_bar</code> albo <code>geom_col</code>. To, której funkcji użyjemy zależy od tego czy dane zostały wcześniej zliczone (<code>geom_col</code>) czy nie (<code>geom_bar</code>).</p>
+<p>Do zliczania danych zamiast funkcji <code>table</code> lepiej użyć funkcji <code>count</code> z pakietu dplyr.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie bibliotek</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># prostsza wersja - geom_bar()</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(animal, <span class="fu">aes</span>(<span class="at">x =</span> Animal.Type))<span class="sc">+</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="histogram_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid" width="672"></p>
+<p><img src="barplot_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># trudniejsza wersja count + geom_col</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>tabela_animal_type <span class="ot">&lt;-</span> <span class="fu">count</span>(animal, Animal.Type)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tabela_animal_type, <span class="fu">aes</span>(<span class="at">x =</span> Animal.Type, <span class="at">y =</span> n))<span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="barplot_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 </section>
-<section id="jak-narysować-histogram-w-excel" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="jak-narysować-histogram-w-excel"><span class="header-section-number">2.2</span> Jak narysować histogram w Excel?</h2>
+<section id="jak-narysować-wykres-słupkowy-w-excel" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="jak-narysować-wykres-słupkowy-w-excel"><span class="header-section-number">4.2</span> Jak narysować wykres słupkowy w Excel?</h2>
 
 
 </section>
@@ -508,13 +545,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wczytanie_danych.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Wczytanie danych</span></span>
+      <a href="./boxplot.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Boxplot</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./boxplot.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Boxplot</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./scatterplot.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres kropkowy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
