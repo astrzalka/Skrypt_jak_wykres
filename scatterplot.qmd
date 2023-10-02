@@ -1,5 +1,5 @@
 ---
-title: "Wykres kropkowy"
+title: "Wykres rozrzutu"
 ---
 
 Wykres kropkowy albo wykres rozrzutu (ang. *scatterplot*). Umożliwia wizualizację zależności pomiędzy dwiema zmiennymi ilościowymi.
@@ -29,7 +29,7 @@ legend(10, 50, legend=c( "Aquatic", "Specialized", "Multiple", "Terrestrial", "H
 
 ### ggplot2
 
-Do narysowania histogramu wykorzystaj funkcje `ggplot` i `geom_point`.
+Do narysowania wykresu rozrzutu wykorzystaj funkcje `ggplot` i `geom_point`.
 
 W funkcji `ggplot` podaj nazwę tabeli i nazwę kolumn z danymi: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_1, y = nazwa_kolumny_2))`. Potem dodaj `geom_point()`. W aes możesz też podać trzecią kolumnę, która pozwoli na pokolorowanie punktów według zmiennej jakościowej. Legenda zostanie utworzona automatycznie.
 
@@ -53,6 +53,49 @@ ggplot(genomes, aes(x = size, y = GC, color = habitat))+
 
 
 ```
+### Dodanie linii trendu
+
+Aby do wykresu narysowanego przy pomocy pakietu ggplot2 dodać linię trendu wystarczy do wcześniejszego kodu dodać funkcję `geom_smooth`. Domyślnie linia trendu zostanie dopasowane przy pomocy algorytmu loess, można to zmienić na model liniowy przy pomocy argumentu `model = 'lm'`.
+Szary obszar wokół linii to 95% przedział ufności.
+
+```{r, message=FALSE}
+# wczytanie danych
+data_trend <- read.table('data/heights.txt')
+
+ggplot(data_trend, aes(x = Husband, y = Wife))+
+  geom_point()+
+  geom_smooth(method = 'lm')+
+  theme_bw() # białe tło
+
+```
+
+Aby obliczyć parametry modeli liniowego (a i b) można wykorzystać funkcję `lm`.
+
+```{r}
+model <- lm(Wife ~ Husband, data = data_trend)
+# wyświetl model, b - Intercept, a - Husband
+summary(model)
+```
+
 
 ## Jak narysować wykres rozrzutu w Excel?
 
+Aby narysować wykres rozrzutu w programie Excel zaznacz dane w arkuszu, a następnie wybierz wykres scatter z zakładki Insert. Jeżeli chcesz, aby na wykresie znalazły się kropki w różnych kolorach zaznacz kilka kolumn.
+
+![](images/excel_screenshots/excel_scatter.png){fig-align="center" width="200"}
+
+Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Domyślnie oś X i Y będą zaczynać się od 0. Dostosuj minimalną wartość osi, jeżeli twoje dane nie zawierają wartości 0. Przy bardzo dużej liczbie punktów wykres może stać się nieczytelny. Aby tego uniknąć zastosuj punkty puste w środku albo częściowo przezroczyste.
+
+![](images/excel_screenshots/excel_scatter2.png){fig-align="center" width="500"}
+
+### Dodanie linii trendu
+
+Do wykresu rozrzutu można dodać linię trendu korzystając z opcji Trendline. W przykładzie wybiorę model liniowy (Linear).
+
+![](images/excel_screenshots/excel_line2.png){fig-align="center" width="200"}
+
+Równanie dla modelu liniowego można wyświetlić bezpośrednio na wykresie wybierając odpowiednią opcję
+
+![](images/excel_screenshots/excel_line3.png){fig-align="center" width="300"}
+
+Powinieneś otrzymać wykres, który wygląda podobnie do przykładu.

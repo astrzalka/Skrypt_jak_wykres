@@ -55,3 +55,21 @@ ggplot(data_box, aes(x = rozklad, y = x))+
 
 
 ## Jak narysować boxplot w Excel?
+
+Aby narysować boxplot w programie Excel zaznacz dane w arkuszu, a następnie wybierz wykres boxplot z zakładki Insert. Jeżeli chcesz narysować więcej niż jeden boxplot zaznacz kilka kolumn.
+
+![](images/excel_screenshots/excel_histogram.png){fig-align="center" width="200"}
+
+Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Domyślnie wykres nie ma legendy, która przypisywałaby dany kolor do wybranych kolumn, brak też podpisów na osi X. Wykres oprócz mediany i kwartyli pokazuje także średnią oznaczoną symbolem 'x'.
+
+![](images/excel_screenshots/excel_boxplot.png){fig-align="center" width="600"}
+
+
+
+
+
+
+
+
+
+

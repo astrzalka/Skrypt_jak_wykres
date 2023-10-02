@@ -1,0 +1,62 @@
+---
+title: "Wykres liniowy"
+---
+
+Wykres liniowy można użyć do pokazania zmiany wartości zmiennej np. w czasie.
+
+## Jak narysować wykres liniowy w R?
+
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
+
+### Base R
+
+Wykres liniowy, podobnie jak wykres rozrzutu można narysować przy pomocy funkcji `plot`, wystarczy dodać do niej argument `type = 'l'` lub `type = 'b'`. Niestety dodanie kilku linii w różnym kolorze wymaga użycia funkcji `lines` dla każdej nowej linii i ręcznego ustawienia legendy.
+
+```{r}
+# wczytanie danych
+data_line <- read.table('data/chick.txt') 
+
+plot(x = data_line$Time[1:12], y = data_line$weight[1:12], type = 'b', col = 'red', 
+     ylim = c(40, 280), xlab = 'Time', ylab = 'Weight') # zakres osi Y, nazwy osi X i Y
+lines(x = data_line$Time[13:24], y = data_line$weight[13:24], type = 'b', col = 'green3')
+lines(x = data_line$Time[25:36], y = data_line$weight[25:36], type = 'b', col = 'blue')
+lines(x = data_line$Time[37:48], y = data_line$weight[37:48], type = 'b', col = 'orange')
+legend(0, 250, legend=c( "Diet A", "Diet B", "Diet C", "Diet D"),
+       col = c('red', 'green3', 'blue', 'orange'), pch = 21)
+
+```
+
+### ggplot2
+
+Do narysowania wykresu liniowego wykorzystaj funkcje `ggplot` i `geom_line`.
+
+W funkcji `ggplot` podaj nazwę tabeli i nazwę kolumn z danymi: `ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_1, y = nazwa_kolumny_2))`. Potem dodaj `geom_line()`. W aes możesz też podać trzecią kolumnę, która pozwoli na pokolorowanie linii według zmiennej jakościowej. Legenda zostanie utworzona automatycznie.
+
+```{r}
+# wczytanie biblioteki
+library(ggplot2)
+
+# zmienna Diet jest liczbą, więc musimy najpierw zmienić ją na zmienną tekstową
+data_line$Diet <- as.character(data_line$Diet)
+
+ggplot(data_line, aes(x = Time, y = weight, color = Diet))+
+  geom_line()+
+  theme_bw()
+
+# Do wykresu możesz dodać punkty pokazujące obserwacje
+ggplot(data_line, aes(x = Time, y = weight, color = Diet))+
+  geom_line()+
+  geom_point()+
+  theme_bw()
+```
+
+## Jak narysować wykres liniowy w Excel?
+
+Aby narysować wykres liniowy w programie Excel zaznacz dane w arkuszu, a następnie wybierz wykres 2-D Line z zakładki Insert. Jeżeli chcesz, aby na wykresie znalazły się linie w różnych kolorach zaznacz kilka kolumn.
+
+![](images/excel_screenshots/excel_line.png){fig-align="center" width="200"}
+
+Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Dane użyte do przygotowania poniższego wykresu wymagały zmiany z formatu wąskiego na szeroki. Jak to zrobić w Excel sprawdź [Tabela przestawna](wczytanie_danych.qmd#tabela-przestawna)
+
+![](images/excel_screenshots/excel_line4.png){fig-align="center" width="600"}
+

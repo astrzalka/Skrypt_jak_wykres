@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów - 1&nbsp; Wczytanie danych</title>
+<title>Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów - 7&nbsp; Słupki błędów</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./histogram.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./line_plot.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wczytanie_danych.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Wczytanie danych</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./error_bar.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Słupki błędów</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -110,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wczytanie_danych.html" class="sidebar-item-text sidebar-link active">
+  <a href="./wczytanie_danych.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Wczytanie danych</span></span></a>
   </div>
 </li>
@@ -146,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./error_bar.html" class="sidebar-item-text sidebar-link">
+  <a href="./error_bar.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Słupki błędów</span></span></a>
   </div>
 </li>
@@ -166,12 +200,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#jak-wczytać-dane-do-r" id="toc-jak-wczytać-dane-do-r" class="nav-link active" data-scroll-target="#jak-wczytać-dane-do-r"><span class="header-section-number">1.1</span> Jak wczytać dane do R?</a></li>
-  <li><a href="#jak-wczytać-dane-tekstowe-do-excel" id="toc-jak-wczytać-dane-tekstowe-do-excel" class="nav-link" data-scroll-target="#jak-wczytać-dane-tekstowe-do-excel"><span class="header-section-number">1.2</span> Jak wczytać dane tekstowe do Excel?</a>
-  <ul class="collapse">
-  <li><a href="#podział-danych-na-kolumny" id="toc-podział-danych-na-kolumny" class="nav-link" data-scroll-target="#podział-danych-na-kolumny"><span class="header-section-number">1.2.1</span> Podział danych na kolumny</a></li>
-  <li><a href="#tabela-przestawna" id="toc-tabela-przestawna" class="nav-link" data-scroll-target="#tabela-przestawna"><span class="header-section-number">1.2.2</span> Tabela przestawna</a></li>
-  </ul></li>
+  <li><a href="#jak-dodać-słupek-błędu-w-r" id="toc-jak-dodać-słupek-błędu-w-r" class="nav-link active" data-scroll-target="#jak-dodać-słupek-błędu-w-r"><span class="header-section-number">7.1</span> Jak dodać słupek błędu w R</a></li>
+  <li><a href="#jak-dodać-słupek-błędu-w-excel" id="toc-jak-dodać-słupek-błędu-w-excel" class="nav-link" data-scroll-target="#jak-dodać-słupek-błędu-w-excel"><span class="header-section-number">7.2</span> Jak dodać słupek błędu w Excel</a></li>
   </ul>
 </nav>
     </div>
@@ -180,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Wczytanie danych</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Słupki błędów</span></h1>
 </div>
 
 
@@ -195,167 +225,91 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="jak-wczytać-dane-do-r" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="jak-wczytać-dane-do-r"><span class="header-section-number">1.1</span> Jak wczytać dane do R?</h2>
-<p>Do R można wczytać dane zapisane w formacie tekstowym txt, csv itp. oraz w formacie excel xlsx (wymaga zainstalowania dodatkowego pakietu readxl).</p>
-<p>Wczytanie danych do R ułatwia obecna w Rstudio funkcja Import Dataset (Zakładka Environment).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/import_dataset.png" class="img-fluid figure-img" width="400"></p>
-</figure>
+<p>Dane biologiczne pokazywane na wykresach pochodzą zwykle z więcej niż jednego powtórzenia biologicznego. Na wykresie powinien być pokazany stopień zmienności danych. W tym celu do wykresu np. słupkowego lub liniowego można dodać słupek błędu. Zwykle pokazuje się w ten sposób odchylenie standardowe lub przedział ufności dla danych.</p>
+<section id="jak-dodać-słupek-błędu-w-r" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="jak-dodać-słupek-błędu-w-r"><span class="header-section-number">7.1</span> Jak dodać słupek błędu w R</h2>
+<p>Dodanie słupków błędu w podstawowym R jest możliwe przy pomocy funkcji <code>arrows</code>, ale dość niewygodne, więc w przykładzie znajdzie się tylko pakiet ggplot2.</p>
+<p>Aby dodać słupki błędy do wykresu trzeba najpierw policzyć średnią i odchylenie standardowe dla wszystkich grup zawartych w danych. W przykładzie wykorzystam dane dotyczące wpływu witaminy C na wzrost zębów u świnek morskich.</p>
+<p>Żeby dodać słupek błędu do wykresu można użyć funkcji <code>geom_errorbar</code> lub <code>geom_linerange</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie danych</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data_tooth <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">'data/tooth.txt'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data_tooth)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   len supp dose
+1  4.2   VC  0.5
+2 11.5   VC  0.5
+3  7.3   VC  0.5
+4  5.8   VC  0.5
+5  6.4   VC  0.5
+6 10.0   VC  0.5</code></pre>
 </div>
-<p>Po wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się poniższe okno dialogowe</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/okno_import_dataset.png" class="img-fluid figure-img" width="400"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># obliczenie średniej długości zęba w zależności od suplementu i dawki</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pakiet dplyr umożliwia łatwe manipulacje danymi tabelarycznymi</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># możesz też średnią i odchylenie obliczyć np. w Excel i do R wczytać gotowe dane</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># najpierw podział na grupy</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>data_tooth <span class="ot">&lt;-</span> <span class="fu">group_by</span>(data_tooth, supp, dose)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>data_tooth_summary <span class="ot">&lt;-</span> <span class="fu">summarise</span>(data_tooth, <span class="at">srednia =</span> <span class="fu">mean</span>(len),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                                <span class="at">odchylenie =</span> <span class="fu">sd</span>(len))</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># wynik</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>data_tooth_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 4
+# Groups:   supp [2]
+  supp   dose srednia odchylenie
+  &lt;chr&gt; &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;
+1 OJ      0.5   13.2        4.46
+2 OJ      1     22.7        3.91
+3 OJ      2     26.1        2.66
+4 VC      0.5    7.98       2.75
+5 VC      1     16.8        2.52
+6 VC      2     26.1        4.80</code></pre>
 </div>
-<p>Po ustawieniu wszytskich parametrów takich jak obecność nazw kolumn i separatory można wczytać dane (Import). Dane pojawią się w środowisku R (zakładka Environment). W oknie konsoli pojawi się też kod użyty do wczytania danych, który można skopiować i zapisać w skrypcie do wykorzystania w przyszłości. Kliknięcie na nazwę wczytanej tabeli w zakładce Environment otworzy podgląd danych, który można sortować i filtrować, ale nie jest możliwa edycja danych.</p>
-<p>Jeżeli chcesz dowiedzieć się więcej na temat pracy z danymi tabelarycznymi w R polecam pakiety dplyr i tidyr.</p>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># zmiana typu zmiennej dose na tekstowy</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>data_tooth_summary<span class="sc">$</span>dose <span class="ot">&lt;-</span> <span class="fu">as.character</span>(data_tooth_summary<span class="sc">$</span>dose)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># wykres słupkowy</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_tooth_summary, <span class="fu">aes</span>(<span class="at">x =</span> supp, <span class="at">y =</span> srednia, <span class="at">fill =</span> dose))<span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">'dodge'</span>)<span class="sc">+</span> <span class="co"># wykres słupkowy</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> srednia <span class="sc">-</span> odchylenie, <span class="at">ymax =</span> srednia <span class="sc">+</span> odchylenie), <span class="co"># słupki błędu</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>                 <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>))<span class="sc">+</span> <span class="co"># position żeby pasowały do słupków</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="co"># białe tło</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="error_bar_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Dane tego typu lepiej przedstawić w formie punktów pokazujących wszystkie obserwacje i do tego dodać średnią z przedziałem ufności. Można do tego wykorzystać funkcję <code>stat_summary</code>. Wtedy możemy pominąć etap obliczania średniej z wykorzystaniem pakietu dplyr.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># zmiana typu zmiennej dose na tekstowy</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data_tooth<span class="sc">$</span>dose <span class="ot">&lt;-</span> <span class="fu">as.character</span>(data_tooth<span class="sc">$</span>dose)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_tooth, <span class="fu">aes</span>(<span class="at">x =</span> supp, <span class="at">y =</span> len, <span class="at">color =</span> dose, <span class="at">group =</span> dose))<span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>))<span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun.data =</span> <span class="st">'mean_cl_normal'</span>, <span class="at">geom =</span> <span class="st">'pointrange'</span>, <span class="co"># przedział ufności</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>), <span class="at">color =</span> <span class="st">'black'</span>) <span class="co"># odpowiednia pozycja i czarny kolor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="error_bar_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># albo</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_tooth, <span class="fu">aes</span>(<span class="at">x =</span> supp, <span class="at">y =</span> len, <span class="at">color =</span> dose, <span class="at">group =</span> dose))<span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>))<span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun.data =</span> <span class="st">'mean_cl_normal'</span>, <span class="at">geom =</span> <span class="st">'crossbar'</span>, <span class="co"># przedział ufności</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="error_bar_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 </section>
-<section id="jak-wczytać-dane-tekstowe-do-excel" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="jak-wczytać-dane-tekstowe-do-excel"><span class="header-section-number">1.2</span> Jak wczytać dane tekstowe do Excel?</h2>
-<section id="podział-danych-na-kolumny" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="podział-danych-na-kolumny"><span class="header-section-number">1.2.1</span> Podział danych na kolumny</h3>
-<p>Dane tekstowe można do “wkleić” do programu Excel. Zdarza się, że nie podzielą się one automatycznie na kolumny i będą wyglądały tak:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_data.png" class="img-fluid figure-img" width="200"></p>
-</figure>
-</div>
-<p>Aby ręcznie podzielić dane na kolumny wybierz opcję Text to Columns z zakładki Data.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_data2.png" class="img-fluid figure-img" width="200"></p>
-</figure>
-</div>
-<p>Następnie wybierz opcję Delimited</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_data3.png" class="img-fluid figure-img" width="400"></p>
-</figure>
-</div>
-<p>Oraz właściwy seperator, w przykładzie jest to spacja. Zdarza się, że nagłówki kolumn mogą zostać przesunięte i będzie je trzeba później poprawić. Na koniec naciśnij Finish.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_data4.png" class="img-fluid figure-img" width="400"></p>
-</figure>
-</div>
-<p>Po wczytaniu danych upewnij się, że kolumny mają właściwy typa danych to jest liczby powinny mieć format number, a text lub date. Jeżeli liczby są zapisane z kropką jako separatorem dzisiętnym np. 10.45, może pomóc zmiana wszystkich . na , .</p>
-</section>
-<section id="tabela-przestawna" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="tabela-przestawna"><span class="header-section-number">1.2.2</span> Tabela przestawna</h3>
-<p>W zależności od źródła danych mogą być one uporządkowane w różny sposób. Generalnie wyróżnia się dwa sposoby ułożenia danych w tabeli: szeroki i wąski. Typ szeroki jest łatwiejszy do pracy w Excel, tryb wąski za to ułatwia wizualizację danych w R. Oba programy zawierają funkcje pozwalające na zmianą typu danych : Excel - tabela przestawna (pivot table), R - pakiet tidyr i funckje <code>pivot_longer</code>/<code>pivot_wider</code>.</p>
-<p>Przykład danych w postaci wąskiej. W kolumnach znajdują się kolejne zmienna, w wierszach obserwacje.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>roślina</th>
-<th>gen</th>
-<th>wysokość</th>
-<th>liczba liści</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>A</td>
-<td>20</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>A</td>
-<td>25</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>B</td>
-<td>12</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>B</td>
-<td>16</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>C</td>
-<td>32</td>
-<td>6</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>C</td>
-<td>33</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-<p>Przykład danych w postaci szerokiej.</p>
-<table class="table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>A wysokość</th>
-<th>B wysokość</th>
-<th>C wysokość</th>
-<th>A liczba liści</th>
-<th>B liczba liści</th>
-<th>C liczba liści</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>20</td>
-<td>12</td>
-<td>32</td>
-<td>5</td>
-<td>2</td>
-<td>6</td>
-</tr>
-<tr class="even">
-<td>25</td>
-<td>16</td>
-<td>33</td>
-<td>7</td>
-<td>3</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-<p>Do zmiany danych z wąskich na szerokie zaznacz wybrane kolumny i wybierz funkcję pivot table z zakładki Insert.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_pivot.png" class="img-fluid figure-img" width="200"></p>
-</figure>
-</div>
-<p>Zostaniesz przeniesiony do nowego arkusza. W oknie po lewej stronie możesz wybrać zmienne, które staną się nagłówkami kolumn (Columns), wierszy (Rows) i wartościami w tabeli (Values). Wystarczy, że przeciągniesz nazwy kolumn z górnego okienka do dolnych.</p>
-<p>Jeżeli nie wybierzesz żadnej kolumny do okienka Rows otrzymasz przekształcone dane (np. zostanie policzona średnia dla każdej nowej kolumny). Aby tego uniknąć Twoje dane muszą zawierać unikalny identyfikator dla każdego nowego rzędu np. kolumnę z kolejnymi liczbami od 1 do … .</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_pivot2.png" class="img-fluid figure-img" width="300"></p>
-</figure>
-</div>
-<p>Powinieneś otrzymać tabelę podobną do tej w przykładzie.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/excel_screenshots/excel_pivot3.png" class="img-fluid figure-img" width="400"></p>
-</figure>
-</div>
+<section id="jak-dodać-słupek-błędu-w-excel" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="jak-dodać-słupek-błędu-w-excel"><span class="header-section-number">7.2</span> Jak dodać słupek błędu w Excel</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -594,13 +548,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Wstęp</span>
+      <a href="./line_plot.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Wykres liniowy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./histogram.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Histogram</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -223,7 +223,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w <a href="./wczytanie_danych.html">Jak wczytać dane do R</a></p>
 <section id="base-r" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">3.1.1</span> Base R</h3>
-<p>Do narysowania wykresu pudełkowego wykorzystaj funckję <code>boxplot</code>. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli$nazwa_kolumny albo skorzystać z formuły nazwa_tabeli$kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.</p>
+<p>Do narysowania wykresu pudełkowego wykorzystaj funckję <code>boxplot</code>. Możesz po przecinku podać kolejne kolumny danych zawierające dane do przedstawienia na wykresie korzystając z $ np. nazwa_tabeli$nazwa_kolumny albo skorzystać z formuły: nazwa_tabeli$kolumna_z_danymi_liczbowymi ~ nazwa_tabeli$kolumna_z_grupami.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_box <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">'data/data_test.txt'</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -273,6 +273,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="jak-narysować-boxplot-w-excel" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="jak-narysować-boxplot-w-excel"><span class="header-section-number">3.2</span> Jak narysować boxplot w Excel?</h2>
+<p>Aby narysować boxplot w programie Excel zaznacz dane w arkuszu, a następnie wybierz wykres boxplot z zakładki Insert. Jeżeli chcesz narysować więcej niż jeden boxplot zaznacz kilka kolumn.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_histogram.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<p>Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Domyślnie wykres nie ma legendy, która przypisywałaby dany kolor do wybranych kolumn, brak też podpisów na osi X. Wykres oprócz mediany i kwartyli pokazuje także średnią oznaczoną symbolem ‘x’.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_boxplot.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
 
 
 </section>

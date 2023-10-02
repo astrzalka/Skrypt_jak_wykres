@@ -13,6 +13,8 @@ book:
     - boxplot.qmd
     - barplot.qmd
     - scatterplot.qmd
+    - line_plot.qmd
+    - error_bar.qmd
     - references.qmd
 
 bibliography: references.bib

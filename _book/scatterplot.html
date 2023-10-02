@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów - 5&nbsp; Wykres kropkowy</title>
+<title>Skrypt do kursy Analiza danych biologicznych i prezentacja wykresów - 5&nbsp; Wykres rozrzutu</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./line_plot.html" rel="next">
 <link href="./barplot.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -108,7 +108,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./scatterplot.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres kropkowy</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./scatterplot.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres rozrzutu</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -169,7 +169,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./scatterplot.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres kropkowy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres rozrzutu</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./line_plot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Wykres liniowy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -192,8 +198,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r"><span class="header-section-number">5.1.1</span> Base R</a></li>
   <li><a href="#ggplot2" id="toc-ggplot2" class="nav-link" data-scroll-target="#ggplot2"><span class="header-section-number">5.1.2</span> ggplot2</a></li>
+  <li><a href="#dodanie-linii-trendu" id="toc-dodanie-linii-trendu" class="nav-link" data-scroll-target="#dodanie-linii-trendu"><span class="header-section-number">5.1.3</span> Dodanie linii trendu</a></li>
   </ul></li>
-  <li><a href="#jak-narysować-wykres-rozrzutu-w-excel" id="toc-jak-narysować-wykres-rozrzutu-w-excel" class="nav-link" data-scroll-target="#jak-narysować-wykres-rozrzutu-w-excel"><span class="header-section-number">5.2</span> Jak narysować wykres rozrzutu w Excel?</a></li>
+  <li><a href="#jak-narysować-wykres-rozrzutu-w-excel" id="toc-jak-narysować-wykres-rozrzutu-w-excel" class="nav-link" data-scroll-target="#jak-narysować-wykres-rozrzutu-w-excel"><span class="header-section-number">5.2</span> Jak narysować wykres rozrzutu w Excel?</a>
+  <ul class="collapse">
+  <li><a href="#dodanie-linii-trendu-1" id="toc-dodanie-linii-trendu-1" class="nav-link" data-scroll-target="#dodanie-linii-trendu-1"><span class="header-section-number">5.2.1</span> Dodanie linii trendu</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -202,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres kropkowy</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wykres rozrzutu</span></h1>
 </div>
 
 
@@ -245,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="ggplot2" class="level3" data-number="5.1.2">
 <h3 data-number="5.1.2" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">5.1.2</span> ggplot2</h3>
-<p>Do narysowania histogramu wykorzystaj funkcje <code>ggplot</code> i <code>geom_point</code>.</p>
+<p>Do narysowania wykresu rozrzutu wykorzystaj funkcje <code>ggplot</code> i <code>geom_point</code>.</p>
 <p>W funkcji <code>ggplot</code> podaj nazwę tabeli i nazwę kolumn z danymi: <code>ggplot(nazwa_tabeli, aes(x = nazwa_kolumny_1, y = nazwa_kolumny_2))</code>. Potem dodaj <code>geom_point()</code>. W aes możesz też podać trzecią kolumnę, która pozwoli na pokolorowanie punktów według zmiennej jakościowej. Legenda zostanie utworzona automatycznie.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie biblioteki</span></span>
@@ -273,11 +283,81 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
+<section id="dodanie-linii-trendu" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="dodanie-linii-trendu"><span class="header-section-number">5.1.3</span> Dodanie linii trendu</h3>
+<p>Aby do wykresu narysowanego przy pomocy pakietu ggplot2 dodać linię trendu wystarczy do wcześniejszego kodu dodać funkcję <code>geom_smooth</code>. Domyślnie linia trendu zostanie dopasowane przy pomocy algorytmu loess, można to zmienić na model liniowy przy pomocy argumentu <code>model = 'lm'</code>. Szary obszar wokół linii to 95% przedział ufności.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie danych</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data_trend <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">'data/heights.txt'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_trend, <span class="fu">aes</span>(<span class="at">x =</span> Husband, <span class="at">y =</span> Wife))<span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>)<span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="co"># białe tło</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="scatterplot_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Aby obliczyć parametry modeli liniowego (a i b) można wykorzystać funkcję <code>lm</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(Wife <span class="sc">~</span> Husband, <span class="at">data =</span> data_trend)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># wyświetl model, b - Intercept, a - Husband</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Wife ~ Husband, data = data_trend)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-19.4685  -3.9208   0.8301   3.9538  11.1287 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 41.93015   10.66162   3.933 0.000161 ***
+Husband      0.69965    0.06106  11.458  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5.928 on 94 degrees of freedom
+Multiple R-squared:  0.5828,    Adjusted R-squared:  0.5783 
+F-statistic: 131.3 on 1 and 94 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section>
 </section>
 <section id="jak-narysować-wykres-rozrzutu-w-excel" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="jak-narysować-wykres-rozrzutu-w-excel"><span class="header-section-number">5.2</span> Jak narysować wykres rozrzutu w Excel?</h2>
+<p>Aby narysować wykres rozrzutu w programie Excel zaznacz dane w arkuszu, a następnie wybierz wykres scatter z zakładki Insert. Jeżeli chcesz, aby na wykresie znalazły się kropki w różnych kolorach zaznacz kilka kolumn.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_scatter.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<p>Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Domyślnie oś X i Y będą zaczynać się od 0. Dostosuj minimalną wartość osi, jeżeli twoje dane nie zawierają wartości 0. Przy bardzo dużej liczbie punktów wykres może stać się nieczytelny. Aby tego uniknąć zastosuj punkty puste w środku albo częściowo przezroczyste.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_scatter2.png" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
+<section id="dodanie-linii-trendu-1" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="dodanie-linii-trendu-1"><span class="header-section-number">5.2.1</span> Dodanie linii trendu</h3>
+<p>Do wykresu rozrzutu można dodać linię trendu korzystając z opcji Trendline. W przykładzie wybiorę model liniowy (Linear).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_line2.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<p>Równanie dla modelu liniowego można wyświetlić bezpośrednio na wykresie wybierając odpowiednią opcję</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_line3.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<p>Powinieneś otrzymać wykres, który wygląda podobnie do przykładu.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -521,8 +601,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./line_plot.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Wykres liniowy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

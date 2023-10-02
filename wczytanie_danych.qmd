@@ -17,7 +17,63 @@ Po wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się pon
 
 Po ustawieniu wszytskich parametrów takich jak obecność nazw kolumn i separatory można wczytać dane (Import). Dane pojawią się w środowisku R (zakładka Environment). W oknie konsoli pojawi się też kod użyty do wczytania danych, który można skopiować i zapisać w skrypcie do wykorzystania w przyszłości. Kliknięcie na nazwę wczytanej tabeli w zakładce Environment otworzy podgląd danych, który można sortować i filtrować, ale nie jest możliwa edycja danych.
 
+Jeżeli chcesz dowiedzieć się więcej na temat pracy z danymi tabelarycznymi w R polecam pakiety dplyr i tidyr.
+
 ## Jak wczytać dane tekstowe do Excel?
 
+### Podział danych na kolumny
 
+Dane tekstowe można do "wkleić" do programu Excel. Zdarza się, że nie podzielą się one automatycznie na kolumny i będą wyglądały tak:
+
+![](images/excel_screenshots/excel_data.png){fig-align="center" width="200"}
+
+Aby ręcznie podzielić dane na kolumny wybierz opcję Text to Columns z zakładki Data.
+
+![](images/excel_screenshots/excel_data2.png){fig-align="center" width="200"}
+
+Następnie wybierz opcję Delimited 
+
+![](images/excel_screenshots/excel_data3.png){fig-align="center" width="400"}
+
+Oraz właściwy seperator, w przykładzie jest to spacja. Zdarza się, że nagłówki kolumn mogą zostać przesunięte i będzie je trzeba później poprawić. Na koniec naciśnij Finish.
+
+![](images/excel_screenshots/excel_data4.png){fig-align="center" width="400"}
+
+Po wczytaniu danych upewnij się, że kolumny mają właściwy typa danych to jest liczby powinny mieć format number, a text lub date. Jeżeli liczby są zapisane z kropką jako separatorem dzisiętnym np. 10.45, może pomóc zmiana wszystkich . na , .
+
+### Tabela przestawna
+
+W zależności od źródła danych mogą być one uporządkowane w różny sposób. Generalnie wyróżnia się dwa sposoby ułożenia danych w tabeli: szeroki i wąski. Typ szeroki jest łatwiejszy do pracy w Excel, tryb wąski za to ułatwia wizualizację danych w R. Oba programy zawierają funkcje pozwalające na zmianą typu danych : Excel - tabela przestawna (pivot table), R - pakiet tidyr i funckje `pivot_longer`/`pivot_wider`.
+
+Przykład danych w postaci wąskiej. W kolumnach znajdują się kolejne zmienna, w wierszach obserwacje.
+
+|roślina|gen|wysokość|liczba liści|
+|----|----|----|----|
+|1|A|20|5|
+|2|A|25|7|
+|3|B|12|2|
+|4|B|16|3|
+|5|C|32|6|
+|6|C|33|5|
+
+Przykład danych w postaci szerokiej. 
+
+|A wysokość|B wysokość|C wysokość|A liczba liści|B liczba liści|C liczba liści|
+|----|----|----|----|----|----|
+|20|12|32|5|2|6|
+|25|16|33|7|3|5|
+
+Do zmiany danych z wąskich na szerokie zaznacz wybrane kolumny i wybierz funkcję pivot table z zakładki Insert.
+
+![](images/excel_screenshots/excel_pivot.png){fig-align="center" width="200"}
+
+Zostaniesz przeniesiony do nowego arkusza. W oknie po lewej stronie możesz wybrać zmienne, które staną się nagłówkami kolumn (Columns), wierszy (Rows) i wartościami w tabeli (Values). Wystarczy, że przeciągniesz nazwy kolumn z górnego okienka do dolnych.
+
+Jeżeli nie wybierzesz żadnej kolumny do okienka Rows otrzymasz przekształcone dane (np. zostanie policzona średnia dla każdej nowej kolumny). Aby tego uniknąć Twoje dane muszą zawierać unikalny identyfikator dla każdego nowego rzędu np. kolumnę z kolejnymi liczbami od 1 do ... .
+
+![](images/excel_screenshots/excel_pivot2.png){fig-align="center" width="300"}
+
+Powinieneś otrzymać tabelę podobną do tej w przykładzie.
+
+![](images/excel_screenshots/excel_pivot3.png){fig-align="center" width="400"}
 
