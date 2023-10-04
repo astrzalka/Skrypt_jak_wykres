@@ -2,7 +2,7 @@
 title: "Wykres słupkowy"
 ---
 
-Wykres słupkowy jest najczęściej stosowanym typem wykresu w publikacjach naukowych. Umożliwia wizualną reprezentację danych jakościowych. Przy danych ilościowych warto rozważyć inny sporób prezentacji danych np. [wykres pudełkowy](boxplot.qmd). Jak dodać do wykresu słupkowego zakres błędu sprawdź tutaj.
+Wykres słupkowy (ang. *barplot*) jest najczęściej stosowanym typem wykresu w publikacjach naukowych. Umożliwia wizualną reprezentację danych jakościowych. Przy danych ilościowych warto rozważyć inny sporób prezentacji danych np. [wykres pudełkowy](boxplot.qmd). Jak dodać do wykresu słupkowego zakres błędu sprawdź tutaj.
 
 ## Jak narysować wykres słupkowy w R?
 
