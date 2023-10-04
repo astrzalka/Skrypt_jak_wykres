@@ -84,7 +84,7 @@ Aby narysować wykres rozrzutu w programie Excel zaznacz dane w arkuszu, a nast�
 
 ![](images/excel_screenshots/excel_scatter.png){fig-align="center" width="200"}
 
-Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Domyślnie oś X i Y będą zaczynać się od 0. Dostosuj minimalną wartość osi, jeżeli twoje dane nie zawierają wartości 0. Przy bardzo dużej liczbie punktów wykres może stać się nieczytelny. Aby tego uniknąć zastosuj punkty puste w środku albo częściowo przezroczyste.
+Otrzymany wykres powinien wyglądać podobnie do przykładu poniżej Domyślnie oś X i Y będą zaczynać się od 0. Dostosuj minimalną wartość osi, jeżeli twoje dane nie zawierają wartości 0. Przy bardzo dużej liczbie punktów wykres może stać się nieczytelny. Aby tego uniknąć zastosuj punkty puste w środku albo częściowo przezroczyste.
 
 ![](images/excel_screenshots/excel_scatter2.png){fig-align="center" width="500"}
 

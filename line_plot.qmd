@@ -56,7 +56,7 @@ Aby narysować wykres liniowy w programie Excel zaznacz dane w arkuszu, a nastę
 
 ![](images/excel_screenshots/excel_line.png){fig-align="center" width="200"}
 
-Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Dane użyte do przygotowania poniższego wykresu wymagały zmiany z formatu wąskiego na szeroki. Jak to zrobić w Excel sprawdź [Tabela przestawna](wczytanie_danych.qmd#tabela-przestawna)
+Otrzymany wykres powinien wyglądać podobnie do przykładu poniżej. Dane użyte do przygotowania poniższego wykresu wymagały zmiany z formatu wąskiego na szeroki. Jak to zrobić w Excel sprawdź [Tabela przestawna](wczytanie_danych.qmd#tabela-przestawna)
 
 ![](images/excel_screenshots/excel_line4.png){fig-align="center" width="600"}
 

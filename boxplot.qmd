@@ -60,7 +60,7 @@ Aby narysować boxplot w programie Excel zaznacz dane w arkuszu, a następnie wy
 
 ![](images/excel_screenshots/excel_histogram.png){fig-align="center" width="200"}
 
-Powinieneś otrzymać wykres, który wygląda podobnie do przykładu. Domyślnie wykres nie ma legendy, która przypisywałaby dany kolor do wybranych kolumn, brak też podpisów na osi X. Wykres oprócz mediany i kwartyli pokazuje także średnią oznaczoną symbolem 'x'.
+Otrzymany wykres powinien wyglądać podobnie do przykładu poniżej. Domyślnie wykres nie ma legendy, która przypisywałaby dany kolor do wybranych kolumn, brak też podpisów na osi X. Wykres oprócz mediany i kwartyli pokazuje także średnią oznaczoną symbolem 'x'.
 
 ![](images/excel_screenshots/excel_boxplot.png){fig-align="center" width="600"}
 

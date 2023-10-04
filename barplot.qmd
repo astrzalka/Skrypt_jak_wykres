@@ -50,3 +50,14 @@ ggplot(tabela_animal_type, aes(x = Animal.Type, y = n))+
 
 ## Jak narysować wykres słupkowy w Excel?
 
+Podobnie jak w R pierwszym krokiem jest przygotowanie tabeli liczebności dla wybranej zmiennej. Można to zrobić przy pomocy [tabeli przestawnej](wczytanie_danych.qmd#tabela-przestawna) lub przy pomocy funkcji COUNTIF (pol. LICZ.JEŻELI).
+
+![](images/excel_screenshots/excel_column3.png){fig-align="center" width="200"}
+
+Następnie należy zaznaczyć dane i wybrać wykres kolumnowy 2-D z zakładki Insert
+
+![](images/excel_screenshots/excel_column1.png){fig-align="center" width="200"}
+
+Otrzymany wykres powinien wyglądać podobnie do przykładu poniżej.
+
+![](images/excel_screenshots/excel_column2.png){fig-align="center" width="500"}

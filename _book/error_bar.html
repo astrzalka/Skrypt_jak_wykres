@@ -229,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="jak-dodać-słupek-błędu-w-r" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="jak-dodać-słupek-błędu-w-r"><span class="header-section-number">7.1</span> Jak dodać słupek błędu w R</h2>
 <p>Dodanie słupków błędu w podstawowym R jest możliwe przy pomocy funkcji <code>arrows</code>, ale dość niewygodne, więc w przykładzie znajdzie się tylko pakiet ggplot2.</p>
-<p>Aby dodać słupki błędy do wykresu trzeba najpierw policzyć średnią i odchylenie standardowe dla wszystkich grup zawartych w danych. W przykładzie wykorzystam dane dotyczące wpływu witaminy C na wzrost zębów u świnek morskich.</p>
+<p>Aby dodać słupki błędu do wykresu trzeba najpierw policzyć średnią i odchylenie standardowe dla wszystkich grup zawartych w danych. W przykładzie wykorzystam dane dotyczące wpływu witaminy C na wzrost zębów u świnek morskich.</p>
 <p>Żeby dodać słupek błędu do wykresu można użyć funkcji <code>geom_errorbar</code> lub <code>geom_linerange</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie danych</span></span>
@@ -250,10 +250,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># najpierw podział na grupy</span></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>data_tooth <span class="ot">&lt;-</span> <span class="fu">group_by</span>(data_tooth, supp, dose)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>data_tooth_summary <span class="ot">&lt;-</span> <span class="fu">summarise</span>(data_tooth, <span class="at">srednia =</span> <span class="fu">mean</span>(len),</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                                <span class="at">odchylenie =</span> <span class="fu">sd</span>(len))</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># wynik</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>data_tooth_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Obliczenie średniej i odchylenia standardowego</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data_tooth_summary <span class="ot">&lt;-</span> <span class="fu">summarise</span>(data_tooth, <span class="at">srednia =</span> <span class="fu">mean</span>(len),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                                <span class="at">odchylenie =</span> <span class="fu">sd</span>(len))</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># wynik</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>data_tooth_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 4
 # Groups:   supp [2]
@@ -289,8 +290,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_tooth, <span class="fu">aes</span>(<span class="at">x =</span> supp, <span class="at">y =</span> len, <span class="at">color =</span> dose, <span class="at">group =</span> dose))<span class="sc">+</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>))<span class="sc">+</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun.data =</span> <span class="st">'mean_cl_normal'</span>, <span class="at">geom =</span> <span class="st">'pointrange'</span>, <span class="co"># przedział ufności</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>), <span class="at">color =</span> <span class="st">'black'</span>) <span class="co"># odpowiednia pozycja i czarny kolor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun.data =</span> <span class="st">'mean_cl_normal'</span>, <span class="co"># przedział ufności</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">geom =</span> <span class="st">'pointrange'</span>, <span class="co"># co narysować</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>), <span class="co"># odpowiednia pozycja</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> <span class="st">'black'</span>) <span class="co"># czarny kolor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="error_bar_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -308,6 +311,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="jak-dodać-słupek-błędu-w-excel" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="jak-dodać-słupek-błędu-w-excel"><span class="header-section-number">7.2</span> Jak dodać słupek błędu w Excel</h2>
+<p>Podobnie jak w przykładzie dotyczącym R pierwszym krokiem będzie obliczenie średniej i idchylenia standardowego. Można to zrobić ręcznie korzystając z formuł Excela albo skorzystać z <a href="./wczytanie_danych.html#tabela-przestawna">tabeli przestawnej</a>, co w przypadku dużych danych będzie znacznie szybsze. Poniżej przykładowe ustawienie opcji tabeli przestawnej i wynik.</p>
+<p><img src="images/excel_screenshots/excel_pivot6.png" class="img-fluid" data-fig-align="center" width="200"> <img src="images/excel_screenshots/excel_pivot7.png" class="img-fluid" data-fig-align="center" width="600"></p>
+<p>Słupki blędu można dodać do wykresu słupkowego lub punktowego. W prawym górnym rogu wykresu można otworzyć menu pozwalające na dodanie do wykresu m. in. legendy i słupków błędu. Po dodaniu słupki błędu domyślnie mają taką samą długość i wymagają zmiany. Trzeba ręcznie wybrać zakres danych, który zawiera wartości obliczonego odchylenia standardowego. W opcjach słupków błędu wybieramy Custom i następnie Specify Value.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_error.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<p>Otrzymany wykres powinien wyglądać podobnie do przykładu poniżej.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_error2.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>W Excelu można też narysować wykres pokazujący wszystkie obserwacje wraz z średnią i odchyleniem standardowym w formie słupka błędu. Wymaga to ręcznego ustawienia serii danych osobno dla punktów i dla słupka błędu. Poniżej przykład takiego wykresu, w którym przesunęłam słupek błędu w prawo tak aby nie zasłaniał punktów.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/excel_screenshots/excel_error3.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
 
 
 </section>
