@@ -11,7 +11,7 @@ Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więce
 
 ### Base R
 
-Do narysowania histogramu wykorzystaj funkcję `hist`. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu `breaks` do podania oczekiwanej liczby przedziałów histogramu.
+Do narysowania histogramu wykorzystaj funkcję `hist`. Jako pierwszy argument podaj odpowiednią kolumnę z wczytanej tabeli korzystając z $ np. nazwa_tabeli$nazwa_kolumny. Dodatkowo możesz użyć argumentu `breaks` do podania oczekiwanej liczby przedziałów histogramu. Jako przykładu użyję losowo wygenerowanych danych.
 
 ```{r}
 # wczytanie danych

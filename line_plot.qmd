@@ -6,7 +6,8 @@ Wykres liniowy można użyć do pokazania zmiany wartości zmiennej np. w czasie
 
 ## Jak narysować wykres liniowy w R?
 
-Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd)
+Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więcej informacji w [Jak wczytać dane do R](wczytanie_danych.qmd).
+Jako przykładu użyję danych dotyczących wzrostu kurczaków w zależności od rodzaju diety.
 
 ### Base R
 

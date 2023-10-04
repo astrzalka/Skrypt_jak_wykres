@@ -10,7 +10,7 @@ Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więce
 
 ### Base R
 
-Do narysowanie wykresu rozrzutu można użyć funkcji `plot`, w której jako dwa pierwsze argumenty należy podać kolumny tabeli z danymi np. plot(tabela\$kolumna_1, tabela\$kolumna_2)
+Do narysowanie wykresu rozrzutu można użyć funkcji `plot`, w której jako dwa pierwsze argumenty należy podać kolumny tabeli z danymi np. plot(tabela\$kolumna_1, tabela\$kolumna_2). Jako przykładu użyję danych dotyczących wielkości i procentu GC genomów bakteryjnych.
 
 ```{r}
 # wczytanie danych dotyczących wielkości genomów bakteryjnych
@@ -55,8 +55,7 @@ ggplot(genomes, aes(x = size, y = GC, color = habitat))+
 ```
 ### Dodanie linii trendu
 
-Aby do wykresu narysowanego przy pomocy pakietu ggplot2 dodać linię trendu wystarczy do wcześniejszego kodu dodać funkcję `geom_smooth`. Domyślnie linia trendu zostanie dopasowane przy pomocy algorytmu loess, można to zmienić na model liniowy przy pomocy argumentu `model = 'lm'`.
-Szary obszar wokół linii to 95% przedział ufności.
+Aby do wykresu narysowanego przy pomocy pakietu ggplot2 dodać linię trendu wystarczy do wcześniejszego kodu dodać funkcję `geom_smooth`. Domyślnie linia trendu zostanie dopasowane przy pomocy algorytmu loess, można to zmienić na model liniowy przy pomocy argumentu `model = 'lm'`. Szary obszar wokół linii to 95% przedział ufności. W tej części jako przykładu używam danych dotyczących wzrostu.
 
 ```{r, message=FALSE}
 # wczytanie danych

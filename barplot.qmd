@@ -10,7 +10,7 @@ Wczytaj dane do R korzystając z Import Dataset lub odpowiedniej funkcji. Więce
 
 ### Base R
 
-Do przygotowanie wykresu słupkowego w R można wykorzystać dane pokazujące jak często występowała dana kategoria np.
+Do przygotowanie wykresu słupkowego w R można wykorzystać dane pokazujące jak często występowała dana kategoria. Jako przykładu użyję danych dotyczących zwierząt przebywających w schronisku.
 
 ```{r}
 # wczytanie danych csv
