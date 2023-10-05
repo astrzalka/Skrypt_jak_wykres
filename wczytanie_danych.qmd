@@ -11,7 +11,7 @@ Wczytanie danych do R ułatwia obecna w Rstudio funkcja Import Dataset (Zakładk
 
 ![](images/import_dataset.png){fig-align="center" width="400"}
 
-Po wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się poniższe okno dialogowe
+Po wybraniu opcji From text (base) i pliku tekstowego powinno otworzyć się poniższe okno dialogowe.
 
 ![](images/okno_import_dataset.png){fig-align="center" width="400"}
 
@@ -45,7 +45,7 @@ Po wczytaniu danych upewnij się, że kolumny mają właściwy typa danych to je
 
 W zależności od źródła danych mogą być one uporządkowane w różny sposób. Generalnie wyróżnia się dwa sposoby ułożenia danych w tabeli: szeroki i wąski. Typ szeroki jest łatwiejszy do pracy w Excel, tryb wąski za to ułatwia wizualizację danych w R. Oba programy zawierają funkcje pozwalające na zmianą typu danych : Excel - tabela przestawna (pivot table), R - pakiet tidyr i funckje `pivot_longer`/`pivot_wider`.
 
-Przykład danych w postaci wąskiej. W kolumnach znajdują się kolejne zmienna, w wierszach obserwacje.
+Przykład danych w postaci wąskiej. W kolumnach znajdują się kolejne zmienne, w wierszach obserwacje.
 
 |roślina|gen|wysokość|liczba liści|
 |----|----|----|----|

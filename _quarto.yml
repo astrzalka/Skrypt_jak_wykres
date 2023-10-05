@@ -15,6 +15,7 @@ book:
     - scatterplot.qmd
     - line_plot.qmd
     - error_bar.qmd
+    - tstudent.qmd
     - references.qmd
 
 bibliography: references.bib

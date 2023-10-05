@@ -1,0 +1,31 @@
+---
+title: "Test t-studenta"
+---
+
+Test statystyczny porównujący średnie dwóch grup w celu sprawdzenia czy różnica pomiędzy nimi jest istotna statystycznie. 
+
+## Jak wykonać test t-studenta w R?
+
+Do wykonania testu t-studenta można wykorzystać funkcję `t.test`. Jako dwa pierwsze argumenty funkcji wpisujemy dwie kolumny tabeli (dane uporządkowane w sposób szeroki) np.`t.test(dane$kolumna_1, dane$kolumna2)` albo używamy formuły (dane uporządkowane w sposób wąski) np. `t.test(kolumna_1 ~ kolumna_2, data = dane)`.
+
+Wynik funkcji zawiera m.in. wartość p, która pokazuje prawdopodobieństwo, że obserwowane różnice są wynikiem losowego układu danych, wartość statystyki testowej T i średnie obu grup.
+
+Testu t-studenta nie powinno się używać do analizy średnich więcej niż dwóch grup bez przeprowadzenia korekcji wielokrotnych powtórzeń np. przy pomocy metody Bonferroniego. W R można znaleźć funkcję `pairwise.t.test`, która wykona test t-studenta pomiędzy wszystkimi grupami obecnymi w danych, biorąc pod uwagę wielokrotne powtórzenia tego samego testu.
+
+```{r}
+# wczytanie danych
+dane_t_waskie <- read.table('data/data_t_long.txt')
+dane_t_szerokie <- read.table('data/data_t_wide.txt')
+
+# dane szerokie
+t.test(dane_t_szerokie$A, dane_t_szerokie$B)
+
+# dane wąskie
+t.test(x ~ y, data = dane_t_waskie)
+```
+
+
+## Jak wykonać test t-studenta w Excel?
+
+Do przeprowadzenia testu t-studenta można użyć funkcji `TEST.T`. Funkcja do działania potrzebuje czeterech argumentów: `TEST.T(tablica1;tablica2;strony;typ)`. Tablica1 i 2 to zakres danych, strony podajemy 2 żeby wykonać test dwustronny, typ najlepiej 3 czyli test dla dwóch grup o nierównej wariancji. Jako wynik dodstaniemy wartość p dla testu.
+
